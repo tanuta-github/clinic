@@ -1,0 +1,62 @@
+.banner {
+    margin-bottom: 50px;
+    &__img {
+       height: 570px;
+       background: no-repeat 50% 0;
+       background-size: auto 100%;
+    }
+    .bg-main {
+        background-image: url(../images/banner.jpg);
+    }
+    .bg-hirurg {
+        background-image: url(../images/banner_hirurg.jpg); 
+    }
+    &__menu {
+        display: flex;
+        margin: -160px 0 0;
+        justify-content: space-around;
+        position: relative;
+        z-index: 10;
+        &-item {
+            .blur;
+            display: block;
+            width: calc(25% - 15px);
+            text-align: center;
+            text-decoration: none;
+            color: @color-dark-gray;
+           
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2;
+            box-shadow: 7px 7px 7px 3px rgba(0, 0, 0, 10%);
+            padding-bottom: 40px;
+            &-img {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                height: 120px;
+            }
+            &:nth-child(4) &-img {
+                height: 100px;
+            }
+            &:hover {
+                color: inherit;
+            }
+            &:nth-child(1):hover {
+                background: rgba(150, 221, 212, 0.8); 
+            }
+            &:nth-child(2):hover {
+                background: rgba(232, 203, 151, 0.8); 
+            }
+            &:nth-child(3):hover {
+                background: rgba(225, 190, 189, 0.8); 
+            }
+            &:nth-child(4):hover {
+                background: rgba(164, 198, 237, 0.8); 
+            }
+
+        }
+        
+
+    }
+}

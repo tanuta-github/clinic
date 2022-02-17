@@ -1,0 +1,97 @@
+.help-form {
+    background: url(../images/help-form-bg.jpg) no-repeat 50% 0;
+    height: 588px;
+    text-align: center;
+    color: #fff;
+    &__quest {
+        font-size: 24px;
+        padding: 0 0 27px;
+    }
+    &__title {
+        font-size: 48px;
+    }
+    &__desc {
+        font-size: 16px;
+        font-weight: 500;
+        color: @color-gray2;
+        margin-bottom: 32px;
+        .w {
+            color: @color-white;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+    &__fields {
+        &-input {
+            width: 100%;
+            height: 40px;
+            border: 1px solid @color-gray3;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        &-btn {
+            border: none;
+            border-radius: 30px;
+            font-size: 20px;
+            color: @color-white;
+            background: @color-orange;
+            padding: 10px 35px;
+            margin: 35px 0 20px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        label {
+            cursor: pointer;
+        }
+        &-small {
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 5px;
+            input {
+                margin: 0 5px 0 10px;
+            }
+        }
+
+    }
+    &__success {
+        .blur;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        z-index: 100;
+        width: 831px;
+        .close {
+            border: none;
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            background: @color-white url(../images/icons/icon-close.svg) no-repeat 50%;
+            border-radius: 5px;
+            width: 35px;
+            height: 35px;
+        }
+        &-message {
+            display: flex;
+            height: 465px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: @color-dark-gray;
+        }
+        &-thanks {
+            font-size: 36px;
+            color: @color-orange;
+        }
+    }
+    &__container {
+        padding: 100px 80px 0 0;
+        width: 660px;
+        float: right;
+        position: relative;
+    }
+}

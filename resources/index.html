@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание" />
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/jsCalendar.css" />
+    <link rel="stylesheet" href="css/choices.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <a href="#" class="header__logo"><img src="images/logo.png" alt="" /> </a>
+                    </div>
+                    <div class="col">
+                        <div class="header__phone">
+                            <a href="tel:0800303018" class="header__phone-number">0800 30 30 18</a>
+                            <span class="header__phone-text">Безкоштовно зі всіх операторів</span>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="header__btn-online">Запис Онлайн</div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header__personal">
+                            <i class="header__personal-icon"></i>
+                            Личный кабинет
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="header__address-link">
+                            Адреса и время работы
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="header__lang">
+                            <a href="#" class="header__lang-link active">UA</a>
+                            <a href="#" class="header__lang-link">RU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="header__search">
+                                <form action="#">
+                                    <input type="text" placeholder="Пошук" class="header__search-input" />
+                                    <button type="submit" class="header__search-btn"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">О клинике</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                    <li><a href="#">Услуги / цены</a></li>
+                                    <li><a href="#">Что мы лечим</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Информация для пациентов</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="banner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner__img bg-main"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner__img bg-hirurg"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="banner__menu">
+                    <a href="#" class="banner__menu-item"><span class="banner__menu-item-img"><img
+                                src="images/icon-banner-history.png" alt="" /></span>Записаться на приём</a>
+                    <a href="#" class="banner__menu-item"><span class="banner__menu-item-img"><img
+                                src="images/icon-banner-doctor.png" alt="" /></span>Найти врача</a>
+                    <a href="#" class="banner__menu-item"><span class="banner__menu-item-img"><img
+                                src="images/icon-banner-folder.png" alt="" /></span>Смотреть отзывы</a>
+                    <a href="#" class="banner__menu-item"><span class="banner__menu-item-img"><img
+                                src="images/icon-banner-heart.png" alt="" /></span>Подобрать <br />спецпредложения</a>
+                </div>
+            </div>
+        </section>
+        <section class="directions">
+            <div class="container">
+                <h2 class="directions__title">Направления</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="directions__nav nav" role="tablist">
+                            <button class="active" data-bs-toggle="pill" data-bs-target="#experts" type="button"
+                                role="tab" aria-selected="true">Специалисты</button>
+                            <button data-bs-toggle="pill" data-bs-target="#experts" type="button" role="tab"
+                                aria-selected="false">Диагностика</button>
+                            <button data-bs-toggle="pill" data-bs-target="#experts" type="button" role="tab"
+                                aria-selected="false">Анализы</button>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="directions__book">Справочник заболеваний</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="directions__content">
+                <div class="container">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="experts" role="tabpanel">
+                            <div class="directions__nav-inner nav" role="tablist">
+                                <button class="active" data-bs-toggle="pill" data-bs-target="#adult-doctors" role="tab"
+                                    type="button" aria-selected="true">Взрослые врачи</button>
+                                <button data-bs-toggle="pill" data-bs-target="#child-doctors" role="tab" type="button"
+                                    aria-selected="false">Детские врачи</button>
+                            </div>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="adult-doctors" role="tabpanel">
+                                    <div class="directions__list">
+                                        <div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">А</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Аллерголог</a>
+                                                    <a href="#">Андролог</a>
+                                                    <a href="#">Анестезиолог</a>
+                                                    <a href="#">Аритмолог</a>
+                                                    <a href="#">Артролог</a>
+                                                </div>
+                                            </div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">В</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Венеролог</a>
+                                                </div>
+                                            </div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Г</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Гастроэнтеролог</a>
+                                                    <a href="#">Гематолог</a>
+                                                    <a href="#">Гемостазиолог</a>
+                                                    <a href="#">Генетик</a>
+                                                    <a href="#">Гепатолог</a>
+                                                    <a href="#">Гинеколог</a>
+                                                    <a href="#">Гирудотерапевт</a>
+                                                </div>
+                                            </div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Д</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Дерматолог</a>
+                                                    <a href="#">Детские врачи</a>
+                                                    <a href="#">Детский логопед</a>
+                                                    <a href="#">Диетолог</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">И</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Иммунолог</a>
+                                                    <a href="#">Инфекционист</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">К</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Кардиолог</a>
+                                                    <a href="#">Косметолог</a>
+                                                    <a href="#">КТ-диагност</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Л</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Логопед-афазиолог</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">V</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Маммолог</a>
+                                                    <a href="#">Мануальный терапевт</a>
+                                                    <a href="#">Массажист</a>
+                                                    <a href="#">Мастер маникюра-педикюра</a>
+                                                    <a href="#">Миколог</a>
+                                                    <a href="#">Миколог МРТ-диагност</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Н</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Невролог</a>
+                                                    <a href="#">Нейрохирург</a>
+                                                    <a href="#">Нефролог</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">О</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Онколог</a>
+                                                    <a href="#">Остеопат</a>
+                                                    <a href="#">Отоларинголог</a>
+                                                </div>
+                                            </div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">П</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Педиатр</a>
+                                                    <a href="#">Пластический хирург</a>
+                                                    <a href="#">Подолог</a>
+                                                    <a href="#">Проктолог</a>
+                                                    <a href="#">Психиатр</a>
+                                                    <a href="#">Психолог</a>
+                                                    <a href="#">Психотерапевт</a>
+                                                    <a href="#">Пульмонолог</a>
+                                                </div>
+                                            </div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Р</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Реабилитолог</a>
+                                                    <a href="#">Ревматолог</a>
+                                                    <a href="#">Рентгенолог</a>
+                                                    <a href="#">Репродуктолог</a>
+                                                    <a href="#">Рефлексотерапевт</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">C</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Cексолог</a>
+                                                    <a href="#">Сердечно-сосудистый хирург</a>
+                                                    <a href="#">Сомнолог</a>
+                                                    <a href="#">Стоматолог</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Т</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Терапевт</a>
+                                                    <a href="#">Травматолог-ортопед</a>
+                                                    <a href="#">Трансфузиолог</a>
+                                                    <a href="#"> Трихолог</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">У</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">УЗ-диагност</a>
+                                                    <a href="#">Уролог</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Ф</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Физиотерапевт</a>
+                                                    <a href="#">Флеболог</a>
+                                                    <a href="#">Фониатр</a>
+                                                    <a href="#">Функциональный диагност</a>
+                                                </div>
+                                            </div>                                          
+
+                                               
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="child-doctors" role="tabpanel">
+                                    <div class="directions__list">
+                                        <div>
+                                            <div class="directions__list-item">
+                                                <div class="directions__list-digit">Д</div>
+                                                <div class="directions__list-links">
+                                                    <a href="#">Детский врач</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="diagnostics" role="tabpanel">Диагностика</div>
+                        <div class="tab-pane fade" id="analyzes" role="tabpanel">Анализы</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="help-form">
+            <div class="container">
+                    <div class="help-form__container">
+                        <div class="help-form__quest">Не знаете какой врач Вам нужен?</div>
+                        <h2 class="help-form__title">МЫ ПОМОЖЕМ ВАМ <br >В ВЫБОРЕ ВРАЧА</h2>
+                        <p class="help-form__desc">Оставьте <span class="w">заявку</span> и мы свяжемся с Вами в ближайшее время!</p>
+                        <form class="help-form__fields" id="help-form" onsubmit="document.getElementById('help-form-success').className +=' show'; return false">
+                            <div class="row">
+                                <div class="col-6"><input type="text" class="help-form__fields-input" name="name" placeholder="Ваше имя" value="" /></div>
+                                <div class="col-6"><input type="text" class="help-form__fields-input" name="phone" placeholder="+38 (___) ___ - __ - __*" data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value="" required /></div>
+                            </div>
+                            <button class="help-form__fields-btn">Оставить заявку</button>
+                            <label class="help-form__fields-small"><input type="checkbox" name="check" required checked/> Нажимая кнопку, я соглашаюсь с условиями политики конфиденциальности</label>
+                            <div class="help-form__fields-small"></span>*- обязательные поля для заполнения</div>
+                        </form>
+    
+                        <div class="help-form__success collapse" id="help-form-success">
+                            <button type="button" class="close" data-bs-toggle="collapse" data-bs-target="#help-form-success"></button>
+                            <div class="help-form__success-message">
+                                <div class="help-form__success-thanks">СПАСИБО!</div>
+                                <div>Ожидайте звонка</div>
+                            </div>                          
+                        
+                        </div>
+                    </div>    
+            </div>
+        </section>
+        <section class="digits">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="digits__item digits__bg1">
+                            <div class="digits__item-num">98000</div>
+                            <div class="digits__item-text">клиентов по Киеву</div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3">
+                        <div class="digits__item digits__bg2">
+                            <div class="digits__item-num">15020</div>
+                            <div class="digits__item-text">анализов в месяц</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="digits__item digits__bg3">
+                            <div class="digits__item-num"><span>Более</span>2000</div>
+                            <div class="digits__item-text"> квалифицированных врачей различных специальностей,<br>
+                                среди которых 196 кандидатов медицинских наук, 15 профессоров,
+                                2 академика, 9 доцентов</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="digits__item digits__bg4">
+                            <div class="digits__item-num"><span>Более</span>60000</div>
+                            <div class="digits__item-text">пациентов в год</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="digits__item digits__bg5">
+                            <div class="digits__item-num"><span>Более</span>25000</div>
+                            <div class="digits__item-text">операций в год</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="digits__item digits__bg6">
+                            <div class="digits__item-num"><span>Более</span>45</div>
+                            <div class="digits__item-text">медицинских специальностей</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="digits__item digits__bg7">
+                            <div class="digits__item-num">7</div>
+                            <div class="digits__item-text"></div>круглосуточных стационаров</div>
+                        </div>
+                </div>                
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h3 class="title">Услуги</h3>
+                <p class="desc">Узнайте, какие именно услуги в сфере здравоохранения мы оказываем</p>
+                <div class="services__list">
+                    <a href="#" class="services__item">
+                        <img src="images/services/service1.jpg" alt="" />
+                        <span class="services__item-text">
+                            <span class="services__item-title">Комплексные услуги</span>
+                            <span>Осмотр мужчины</span>
+                            <span>Реабилитация после COVID-19</span>
+                            <span>Подготовка к беременности</span>
+                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill-rule="evenodd" clip-rule="evenodd" d="M0.43934 0.93934C1.02513 0.353553 1.97487 0.353553 2.56066 0.93934L11.5607 9.93934C12.1464 10.5251 12.1464 11.4749 11.5607 12.0607L2.56066 21.0607C1.97487 21.6464 1.02513 21.6464 0.43934 21.0607C-0.146447 20.4749 -0.146447 19.5251 0.43934 18.9393L8.37868 11L0.43934 3.06066C-0.146447 2.47487 -0.146447 1.52513 0.43934 0.93934Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="services__item">
+                        <img src="images/services/service2.jpg" alt="" />
+                        <span class="services__item-text">
+                            <span class="services__item-title">Детское отделение</span>
+                            <span>Вызов врача на дом</span>
+                            <span>Педиатр</span>
+                            <span>ЛОР</span>
+                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill-rule="evenodd" clip-rule="evenodd" d="M0.43934 0.93934C1.02513 0.353553 1.97487 0.353553 2.56066 0.93934L11.5607 9.93934C12.1464 10.5251 12.1464 11.4749 11.5607 12.0607L2.56066 21.0607C1.97487 21.6464 1.02513 21.6464 0.43934 21.0607C-0.146447 20.4749 -0.146447 19.5251 0.43934 18.9393L8.37868 11L0.43934 3.06066C-0.146447 2.47487 -0.146447 1.52513 0.43934 0.93934Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="services__item">
+                        <img src="images/services/service3.jpg" alt="" />
+                        <span class="services__item-text">
+                            <span class="services__item-title">Консультации</span>
+                            <span>Вызов врача на дом</span>
+                            <span>Педиатр</span>
+                            <span>ЛОР</span>
+                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill-rule="evenodd" clip-rule="evenodd" d="M0.43934 0.93934C1.02513 0.353553 1.97487 0.353553 2.56066 0.93934L11.5607 9.93934C12.1464 10.5251 12.1464 11.4749 11.5607 12.0607L2.56066 21.0607C1.97487 21.6464 1.02513 21.6464 0.43934 21.0607C-0.146447 20.4749 -0.146447 19.5251 0.43934 18.9393L8.37868 11L0.43934 3.06066C-0.146447 2.47487 -0.146447 1.52513 0.43934 0.93934Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="services__item">
+                        <img src="images/services/service4.jpg" alt="" />
+                        <span class="services__item-text">
+                            <span class="services__item-title">Диагностика</span>
+                            <span>Своевременная диагностика позволяет пациентам выявить патологические процессы на ранних этапах, а в некоторых случаях даже и полностью избежать последующего лечения.</span>
+
+                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill-rule="evenodd" clip-rule="evenodd" d="M0.43934 0.93934C1.02513 0.353553 1.97487 0.353553 2.56066 0.93934L11.5607 9.93934C12.1464 10.5251 12.1464 11.4749 11.5607 12.0607L2.56066 21.0607C1.97487 21.6464 1.02513 21.6464 0.43934 21.0607C-0.146447 20.4749 -0.146447 19.5251 0.43934 18.9393L8.37868 11L0.43934 3.06066C-0.146447 2.47487 -0.146447 1.52513 0.43934 0.93934Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="#" class="services__item">
+                        <img src="images/services/service5.jpg" alt="" />
+                        <span class="services__item-text">
+                            <span class="services__item-title">Вакцинация</span>
+                            <span>Вызов врача на дом</span>
+                            <span>Педиатр</span>
+                            <span>ЛОР</span>
+                            <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path  fill-rule="evenodd" clip-rule="evenodd" d="M0.43934 0.93934C1.02513 0.353553 1.97487 0.353553 2.56066 0.93934L11.5607 9.93934C12.1464 10.5251 12.1464 11.4749 11.5607 12.0607L2.56066 21.0607C1.97487 21.6464 1.02513 21.6464 0.43934 21.0607C-0.146447 20.4749 -0.146447 19.5251 0.43934 18.9393L8.37868 11L0.43934 3.06066C-0.146447 2.47487 -0.146447 1.52513 0.43934 0.93934Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="#" class="button1">Посмотреть все</a>   
+                    </div>
+                </div>
+            </div>     
+        </section>
+        <section class="specialists">
+            <div class="container">
+                <h3 class="title">Специалисты</h3>
+                <p class="desc">Сплоченная командалучших врачей Киева  решит любую проблему с вашим здоровьем</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="specialists__item">
+                                <div class="specialists__item-img">
+                                    <img src="images/specialists/bojko.jpg" alt="" />
+                                </div>
+                                <div class="specialists__item-type">
+                                    <img src="images/icons/icon-spec-type1.svg" alt="" />
+                                </div>
+                                <div class="specialists__item-text">
+                                    <div class="specialists__item-title">Александр Сергеевич Бойко</div>
+                                    <div class="specialists__item-desc">Проктолог, эндоскопист</div>
+                                    <a href="#" class="specialists__item-btn">ЗАПИСАТЬСЯ</a>
+                                    <div class="specialists__item-adr">
+                                        <img src="images/icons/icon-map1.svg" alt="" />Кольцова 14-з <br>
+                                        <img src="images/icons/icon-map2.svg" alt="" />Кольцова 14-л
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialists__item">
+                                <div class="specialists__item-soc">
+                                    <div class="specialists__item-soc-lang"></div>
+                                </div>
+                                <div class="specialists__item-img">
+                                    <img src="images/specialists/yalovenko.jpg" alt="" />
+                                </div>
+                                <div class="specialists__item-type">
+                                    <img src="images/icons/icon-spec-type2.svg" alt="" />
+                                </div>
+                                <div class="specialists__item-text">
+                                    <div class="specialists__item-title">Екатерина Алексеевна Яловенко</div>
+                                    <div class="specialists__item-desc">Акушер-гинеколог, гинеколог-эндокринолог</div>
+                                    <a href="#" class="specialists__item-btn">ЗАПИСАТЬСЯ</a>
+                                    <div class="specialists__item-adr">
+                                        <img src="images/icons/icon-map1.svg" alt="" />Кольцова 14-з
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialists__item">
+                                <div class="specialists__item-soc">
+                                    <div class="specialists__item-soc-lang"></div>
+                                    <a href="#" class="specialists__item-soc-facebook"></a>
+                                    <a href="#" class="specialists__item-soc-youtube"></a>
+                                    <a href="#" class="specialists__item-soc-insta"></a>
+                                </div>
+                                <div class="specialists__item-img">
+                                    <img src="images/specialists/uninec.jpg" alt="" />
+                                </div>
+                                <div class="specialists__item-type">
+                                    <img src="images/icons/icon-spec-type3.svg" alt="" />
+                                </div>
+                                <div class="specialists__item-text">
+                                    <div class="specialists__item-title">Анна Николаевна Унинец</div>
+                                    <div class="specialists__item-desc">Флеболог, сосудистый хирург, специалист по УЗИ</div>
+                                    <a href="#" class="specialists__item-btn">ЗАПИСАТЬСЯ</a>
+                                    <div class="specialists__item-adr">
+                                        <img src="images/icons/icon-map1.svg" alt="" />Кольцова 14-з<br>
+                                        <img src="images/icons/icon-map2.svg" alt="" />Кольцова 14-л 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="specialists__item">
+                                <div class="specialists__item-img">
+                                    <img src="images/specialists/radionov.jpg" alt="" />
+                                </div>
+                                <div class="specialists__item-type">
+                                    <img src="images/icons/icon-spec-type4.svg" alt="" />
+                                </div>
+                                <div class="specialists__item-text">
+                                    <div class="specialists__item-title">Денис Александрович Радионов</div>
+                                    <div class="specialists__item-desc">Уролог-андролог, хирург, специалист по УЗИ</div>
+                                    <a href="#" class="specialists__item-btn">ЗАПИСАТЬСЯ</a>
+                                    <div class="specialists__item-adr">
+                                        <img src="images/icons/icon-map1.svg" alt="" />Кольцова 14-з<br>
+                                        <img src="images/icons/icon-map2.svg" alt="" />Кольцова 14-л 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"> </div>
+                </div> 
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="#" class="button1">Смотреть всех врачей</a>   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stocks">
+            <div class="container">
+                <h3 class="title">Акции и специальные предложения</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="stocks__item stocks__item-big stocks__bg1">
+                            <div class="stocks__item-big-title">
+                                Бесплатная консультация
+                                гастроэнтеролога
+                            </div>
+                            <div>
+                                Акция проводится<br />с 1 по 20 февраля 2022
+                            </div>
+                            <a href="#" class="stocks__item-big-btn">ЗАПИСАТЬСЯ</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stocks__item stocks__bg2">
+                                    <div class="stocks__item-text">
+                                        Гастро- и колоноскопия <br/>
+                                        "во сне": <br/>
+                                        скидка 30% <br/>
+                                        с 15:00 дп 21:00
+                                    </div>
+                                    <a href="#" class="stocks__item-btn">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stocks__item stocks__bg3">
+                                    <div class="stocks__item-text">
+                                        Диспансеризация <br/>
+                                        для дет.сада и школы <br/>
+                                        за 1 день <br/>
+                                    </div>
+                                    <a href="#" class="stocks__item-btn">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="stocks__item stocks__bg4">
+                                    <div class="stocks__item-text">
+                                        КТ ночью <br/>
+                                        со скидкой 30% <br/>
+                                        с 22:00 да 8:00
+                                    </div>
+                                    <a href="#" class="stocks__item-btn">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="stocks__item stocks__bg5">
+                                    <div class="stocks__item-text">
+                                        Осмотр маммолога<br/>
+                                        бесплатно при посещении гинеколога<br/>
+                                        с 12.02 по 20.02
+                                    </div>
+                                    <a href="#" class="stocks__item-btn">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h3 class="title">Новости и статьи</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="news__item">
+                                <img src="images/news/img4.jpg" alt="" />
+                                <span class="news__item-text">
+                                    <span class="news__item-title">Открытие нового детского отделения</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.
+                                    <span class="news__item-date">27 июля 2022</span>
+                                </span>
+
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__item">
+                                <img src="images/news/img1.jpg" alt="" />
+                                <span class="news__item-text">
+                                    <span class="news__item-title">Курс по сердечно-легочной реанимации</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.
+                                    <span class="news__item-date">27 июля 2022</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__item">
+                                <img src="images/news/img2.jpg" alt="" />
+                                <span class="news__item-text">
+                                    <span class="news__item-title">Нужен ли проктолог для женщин</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.
+                                    <span class="news__item-date">27 июля 2022</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="news__item">
+                                <img src="images/news/img3.jpg" alt="" />
+                                <span class="news__item-text">
+                                    <span class="news__item-title">В клинике новый аппарат МРТ</span>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.
+                                    <span class="news__item-date">27 июля 2022</span>
+                                </span>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="button1">Смотреть все новости</a>   
+            </div>
+        </section>
+        <section class="about">
+            <h3 class="title">О клинике</h3>
+            <div class="container">
+             <div class="nav tab-content">
+                <button type="button" class="about__btn order-xl-1" role="tab" data-bs-toggle="pill" data-bs-target="#about-tab1">
+                    <span>1</span> Профессионализм
+                </button>
+                <button type="button" class="about__btn" data-bs-toggle="pill" role="tab" data-bs-target="#about-tab2">
+                    <span>2</span> 
+                </button>
+                <button type="button" class="order-xl-3" data-bs-toggle="pill" role="tab" data-bs-target="#about-tab3">
+                    <span>3</span> 
+                </button>
+                <button type="button" class="" data-bs-toggle="pill" role="tab" data-bs-target="#about-tab4">
+                    <span>4</span>
+                </button>
+                <button type="button" class="" data-bs-toggle="pill" role="tab" data-bs-target="#about-tab5">
+                    <span>5</span>
+                </button>
+                <button type="button" class="order-xl-6" data-bs-toggle="pill" role="tab" data-bs-target="#about-tab6">
+                    <span>6</span>
+                </button>
+                <button type="button" class="order-xl-7" data-bs-toggle="pill" role="tab" data-bs-target="#about-tab7">
+                    <span>7</span>
+                </button>
+                <div class="tab-pane active" id="about-tab1" role="tabpanel">
+                    tab1
+                </div>
+                <div class="tab-pane" id="about-tab2" role="tabpanel">
+                    tab2
+                </div> 
+                <div class="tab-pane" id="about-tab3" role="tabpanel">
+                    tab3
+                </div>
+                <div class="tab-pane" id="about-tab4" role="tabpanel">
+                    tab4
+                </div>
+                <div class="tab-pane" id="about-tab5" role="tabpanel">
+                    tab5
+                </div>
+                
+
+                <div class="tab-pane order-xl-8" id="about-tab6" role="tabpanel">
+                    tab6
+                </div>
+                
+                <div class="tab-pane order-xl-8" id="about-tab7" role="tabpanel">
+                    tab7
+                </div> 
+                
+                   
+                    
+                
+            </div>
+            
+
+           
+            </div>
+
+        </section>
+    </div>
+
+    <!--
+    <section>
+        <select>
+            <option>This is a placeholder</option>
+            <option>...</option>
+            <option>...</option>
+            <option>...</option>
+          </select>
+    </section> -->
+    <!--
+    <section>
+        <input data-inputmask="'mask': '99-9999999'" />
+    </section>-->
+    <!--
+    modal bootstrap
+    <section>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  Modal
+              </div>
+            </div>
+        </div>
+    </section>
+    modal-->
+    <!--
+    <div class="calendar">
+        <input class="calendar__input" data-bs-toggle="collapse" data-bs-target="#calendar" data-inputmask="'mask': '99.99.9999'"/>
+        <div id="calendar" class="calendar__dates collapse" data-language="ru">    
+        </div>
+    </div>-->
+    <footer></footer>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/jsCalendar.js"></script>
+    <script src="js/jsCalendar.lang.ru.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

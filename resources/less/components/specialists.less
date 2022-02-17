@@ -1,0 +1,157 @@
+.specialists {
+    padding: 100px 0;
+    &__item {
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        margin: 15px 0;
+        position: relative;
+        &-img {
+            height: 270px;
+            transition: height 0.1s;
+            overflow: hidden;
+            img {
+                min-width: 100%;
+                min-height: 100%;
+            }
+        }
+        &-text {
+            height: 180px;
+            transition: height 0.1s;
+            padding: 20px 20px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        &-type {
+            width: 40px;
+            height: 40px;
+            margin: -20px auto 0;
+            position: relative;
+            background: @color-white;
+            border: 1px solid @color-blue6;
+            border-radius: 50%;
+            .center;
+        }
+        &-title {
+            min-height: 40px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+        &-desc {
+            font-size: 14px;
+            min-height: 50px;
+            padding: 0 10px;
+        }
+        &-btn {
+            display: none;
+            background: @color-blue6;
+            color: @color-white;
+            width: 175px;
+            border-radius: 20px;
+            padding: 10px 0;
+            margin-bottom: 15px;
+            text-decoration: none;
+            &:hover {
+                color: @color-white;
+                opacity: 0.7;
+            }
+        }
+        &-adr { 
+            font-size: 14px;
+            img {
+                margin-right: 7px;
+            }
+        }
+        &-soc {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 5;
+            a {
+                display: block;
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                background-color: #fff;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                margin: 15px 0 0;
+            }
+            &-lang {
+                background-image: url(../images/icons/icon-lang.svg);
+                width: 34px;
+                height: 34px;
+
+            }
+            &-facebook {
+                background-image: url(../images/icons/icon-spec-facebook.svg);
+            }
+            &-youtube {
+                background-image: url(../images/icons/icon-spec-youtube.svg);
+            }
+            &-insta {
+                background-image: url(../images/icons/icon-spec-insta.svg);
+            }
+        }
+        &:hover {
+            .specialists__item-img {
+                height: 208px;
+                position: relative;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    display: block;
+                    background: url(../images/mask.png) repeat-x 0 100%;
+                    width: 100%;
+                    height: 100px;
+                }
+            }
+            .specialists__item-text {
+                height: 240px;
+            }
+            .specialists__item-btn {
+                display: block;
+            }
+            
+        }
+
+    }
+    .swiper-slide {
+        width: 25%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .swiper {
+        margin: 0 -75px 95px;
+        padding: 0 75px;
+
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        background: #fff;
+        top: 0;
+        right: 0;
+        width: 75px;
+        height: calc(100% + 45px);
+        cursor: auto;
+    }
+    .swiper-button-prev:after, .swiper-button-next:after {
+        content: "";
+        width: 53px;
+        height: 53px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 1px solid @color-gray3;
+        background: @color-white url(../images/icons/icon-swiper-arrow.svg) no-repeat 50%;
+    }
+    .swiper-button-prev {
+        transform: rotate(180deg);
+        left: 0;
+        right: auto;
+    }
+}

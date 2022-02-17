@@ -1,0 +1,94 @@
+.stocks {
+    background: @color-light-gray;   
+    padding: 80px 0 145px;
+    .title {
+        margin-bottom: 80px;
+    }
+    &__item {
+        border-radius: 10px;
+        border: 3px solid #fff;
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 172px;
+        margin: 0 0 25px;
+        &-text {
+            width: 200px;
+            font-size: 16px;
+            padding: 13px 25px;
+            line-height: 1.2;
+            font-weight: 500;
+            min-height: 120px;
+            color: @color-gray5;
+        }
+        &-btn {
+            display: inline-block;
+            padding: 9px 45px 9px 20px;
+            color: @color-dark-gray;
+            text-decoration: none;
+            border-radius: 15px;
+            background: #fff url(../images/icons/icon-actions-arrow2.svg) no-repeat 90% 50%;
+            margin: 0 0 0 25px;
+            font-size: 15px;
+            line-height: 1;
+            &:hover {
+                color: @color-dark-gray;
+                opacity: 0.9;
+            }
+        }
+    }
+    &__item-big {
+        padding: 35px 32px;
+        height: 372px;
+        color: @color-white;
+        font-size: 20px;
+        line-height: 1.2;
+        &-title {
+            font-size: 30px;
+            line-height: 1.2;
+            width: 300px;
+            position: relative;
+            margin-bottom: 30px;
+            &:after {
+                content: "";
+                margin-top: 13px;
+                display: block;
+                width: 73%;
+                height: 2px;
+                background: @color-white;
+            }
+        }
+        &-btn {
+            display: inline-block;
+            padding: 15px 50px 13px 20px;
+            color: @color-blue7;
+            text-decoration: none;
+            border: 1px solid @color-blue6;
+            border-radius: 20px;
+            background: #fff url(../images/icons/icon-actions-arrow1.svg) no-repeat 90% 50%;
+            margin: 55px 0 0;
+            font-size: 15px;
+            line-height: 1;
+            font-weight: 500;
+            &:hover {
+                color: @color-blue7;
+                opacity: 0.9;
+            }
+        }
+    }
+    &__bg1 {
+        background: url(../images/actions/action1.jpg) no-repeat 50%; 
+    }
+    &__bg2 {
+        background: url(../images/actions/action2.jpg) no-repeat 50%; 
+    }
+    &__bg3 {
+        background: url(../images/actions/action3.jpg) no-repeat 50%; 
+    }
+    &__bg4 {
+        background: url(../images/actions/action4.jpg) no-repeat 50%; 
+    }
+    &__bg5 {
+        background: url(../images/actions/action5.jpg) no-repeat 50%; 
+    }
+}

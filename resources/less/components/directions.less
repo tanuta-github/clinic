@@ -1,0 +1,99 @@
+.directions {
+    padding-top: 37px;
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 43px;
+    }
+    &__book {
+        .button;
+        font-size: 16px;
+        padding-left: 55px;
+        background: @color-blue1 url(../images/icons/icon-book.svg) no-repeat 17px 50%;
+    }
+    &__nav {
+        background: #f3f3f3;
+        border-radius: 25px;
+        float: left;
+        box-shadow: 0 -1px rgba(97, 97, 97, 0.2);
+        margin: 0 0 35px;
+        button {
+           background: none;
+           border: none;
+           padding: 10px 27px;
+           &:hover, &.active {
+               background: @color-blue2;
+               color: @color-white;
+               border-radius: 25px !important;
+           }
+        }
+        button:nth-child(1) {
+            border-radius: 25px 0 0 25px;
+        }
+        button:last-child {
+            border-radius: 0 25px 25px 0;
+        }
+    }
+    &__content {
+        background: @color-light-gray;
+        box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 30px 0 83px;
+    }
+    &__nav-inner {
+        button {
+            background: none;
+            border: none;
+            padding: 0;
+            margin-right: 23px;
+            font-size: 16px;
+            &.active {
+                font-weight: 500;
+                position: relative;
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    height: 5px;
+                    background: @color-blue3;
+                    border-radius: 3px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        padding: 25px 0 0;
+        & > div {
+            width: 25%;
+        }
+        &-item {
+            display: flex;
+            padding: 0 0 8px;
+        }
+        &-digit {
+            color: @color-blue2;
+            margin-right: 15px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &-links {
+            display: flex;
+            flex-direction: column;
+            padding-top: 10px;
+            a {
+                color: @color-dark-gray;
+                text-decoration: none;
+                font-size: 13px;
+                margin-bottom: 7px;
+            }
+            a:hover {
+                color: @color-dark-gray;
+                opacity: 0.8;
+            }
+        }
+    }
+}
