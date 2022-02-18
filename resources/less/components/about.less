@@ -1,17 +1,80 @@
 .about {
     background: @color-light-gray;
-    padding: 90px 0;
+    padding: 90px 0 225px;
+    color: @color-gray5;
     .nav {
-        width: 225px;
         display: block;
     }
     &__btn {
-        display: block;
+        display: flex;
+        width: 475px;
+        margin: 0;
+        padding: 0;
+        background:none;
+        border: none;
+        font-size: 18px;
+        justify-content: stretch;
+        align-items: center;
+        position: relative;
+        color: inherit;
+        z-index: 5;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: -4px;
+            display: block;
+            background: #fff;
+            width: 4px;
+            height: 100%;
+        }
+        &-num {
+            color: @color-blue7;
+            border-radius: 30px 0 0 30px;
+            padding: 20px 16px;
+            font-size: 30px;
+            line-height: 1;
+        }
+        &-num1 {
+            padding: 5px 16px 35px;
+        }
+        &-text {
+            padding: 0 10px;
+            font-size: 23px;
+            text-align: left;
+        }
     }
-    .tab-content {
+    &__btn[aria-selected="true"] {
+        color: @color-blue7;
+        background: @color-white;
+        border-radius: 30px 0 0 30px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        .about__btn-num {
+            background: @color-orange;
+            color: @color-white;
+        }
+        .about__btn-text {
+            background: #fff;
+        }
+    }
+    &__content {
+        margin: -490px 20px 0 475px;
+        background: @color-white url(../images/about.jpg) no-repeat 100% 100%;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        min-height: 490px;
+        line-height: 1.4;
+        padding: 33px 420px 45px 50px;
+        box-sizing: border-box;
+        font-weight: 500;
+        &-title {
+            font-size: 35px;
+            color: @color-blue7;
+            display: inline-block;
+            padding-bottom: 7px;
+            border-bottom: 1px solid #C0EBD9;
+            margin-bottom: 35px;
+
+        }
         
-    }
-    .tab-pane {
-        height: 487px;
     }
 }

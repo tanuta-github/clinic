@@ -1,0 +1,48 @@
+.client-reviews {
+    padding: 160px 0;
+    color: @color-gray5;
+    .swiper {
+        padding-top: 5px;
+    }
+    &__item {
+        max-width: 298px;
+        border-radius: 10px;
+        overflow: hidden;
+        &-img {
+            width: 100%;
+        }
+        &-mask {
+            height: 55px;
+            position: relative;
+            margin-top: -55px;
+            backdrop-filter: blur(8px);
+            border-radius: 0 0 10px 10px;
+            color: #fff;
+            white-space: nowrap;
+            line-height: 55px;
+            font-size: 18px;
+            font-weight: 300;
+            padding-left: 22px;
+            background: url(../images/client-reviews/mask.png) repeat 0 0;
+            img {
+                margin-right: 10px;
+            }
+        }
+        &-text {
+            color: @color-gray6;
+            line-height: 1.5;
+            padding: 25px;
+        }
+        &-link {
+            color: @color-blue8;
+            text-decoration: none;
+            margin-left: 25px;
+            img {
+                margin-left: 10px;
+            }
+            &:hover {
+                color: @color-blue8;
+            }
+        }
+    }
+}

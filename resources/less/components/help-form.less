@@ -28,6 +28,7 @@
             border: 1px solid @color-gray3;
             padding: 0 20px;
             box-sizing: border-box;
+            outline: none;
         }
         &-btn {
             border: none;
@@ -90,8 +91,43 @@
     }
     &__container {
         padding: 100px 80px 0 0;
-        width: 660px;
+        width: 665px;
         float: right;
         position: relative;
     }
 }
+.help-form2 {
+    background: url(../images/visit-form-bg.jpg) no-repeat 50% 0;
+    min-height: 590px;
+    position: relative;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 42%;
+        width: 68%;
+        height: 100%;
+        background-color: @color-blue9;
+    }
+    .help-form__container {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    .help-form__quest {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .help-form__title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .help-form__fields .row {
+        margin-bottom: 30px;
+    }
+    .help-form__desc {
+        margin-bottom: 12px;
+    }
+    .help-form__success {
+        width: 760px;
+    }
+}
+
