@@ -50,6 +50,11 @@ document.addEventListener("click", function(event){
   if (!(c == 'jsCalendar-nav-left' || c == 'jsCalendar-nav-right' || c == 'help-form__fields-input calendar-input'))
     document.getElementById("calendar").className = "calendar collapse jsCalendar"
 })
+/*******************/
+document.getElementById("form-call").addEventListener("submit", function(event){
+  event.preventDefault();
+  
+})
 
 
 

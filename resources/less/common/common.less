@@ -2,6 +2,9 @@
 html, body {
   font-family: @font;
 }
+input {
+  outline: none;
+}
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -19,6 +22,12 @@ html, body {
   display: block;
   background: url(@src) no-repeat 50% 50%;
   background-size: 100% auto;
+}
+.placeholder(@color) {
+  input::-webkit-input-placeholder { color: @color; }
+  input:-ms-input-placeholder { color: @color; }
+  input::-ms-input-placeholder { color: @color; }
+  input::placeholder { color: @color; } 
 }
 .button {
   display: inline-block;
@@ -86,6 +95,9 @@ html, body {
 }
 .blue {
   color: @color-blue7;
+}
+.orange {
+  color: @color-orange;
 }
 /*
 @media(min-width: 1200px) {
@@ -217,3 +229,17 @@ html, body {
       right: auto;
   }
 }
+.swiper-5 {
+  .swiper-4;
+  margin-bottom: 57px;
+  .swiper-slide {
+    width: 20%;
+  }
+}
+.bg-light-gray {
+  background: @color-light-gray;
+}
+/*
+.popup {
+  rgba(0, 0, 0, 0.15)
+}*/

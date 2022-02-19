@@ -1,0 +1,106 @@
+.info {
+    padding: 45px 0 90px;
+    position: relative;
+    min-height: 550px;
+    font-size: 16px;
+    .col-6 {
+        padding-right: 45px;
+    }
+    .info__map {
+        position: absolute;
+        top: 45px;
+        right: 60px;
+        width: calc(50% - 20px);
+        height: 470px;
+        border: 3px solid @color-white;
+    }
+    &__logo {
+        width: 160px;
+        margin-bottom: 25px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 0 0 22px;
+        color: @color-gray6;
+    }
+    &__schedule {
+        padding: 0 0 0 30px;
+        line-height: 1.2;
+        background: url(../images/icons/icon-info-schedule.svg) no-repeat 0 0;
+        span {
+            display: block;
+            padding-bottom: 10px;
+        }
+    }
+    &__phone {
+        &-number {
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        &-text {
+            color: @color-gray1;
+            font-size: 12px;
+            padding: 10px 0 5px;
+            letter-spacing: 1.5px;
+        }
+        &-btn {
+            margin-left: -5px;
+            border: none;
+            background: @color-orange url(../images/icons/icon-info-phone.svg) no-repeat 20px 50%;
+            padding: 0 25px 0 50px;
+            line-height: 60px;
+            height: 60px;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            float: left;
+            .hover;
+        }
+    }
+    &__mail {
+        padding: 32px 0 25px;
+        a {
+            font-size: 16px;
+            color: #0A7ABF;
+            text-decoration: underline;
+            margin-left: 5px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &__address {
+        background: url(../images/icons/icon-info-address.svg) no-repeat 0 0;
+        padding: 0 0 50px 27px;
+        &__title {
+            display: block;
+            padding-bottom: 10px;
+            color: @color-blue7;
+        }
+        &-item {
+            padding: 0 0 7px;
+        }
+    }
+    &__youtube {
+        background: url(../images/icons/icon-info-youtube.svg) no-repeat 0 0;
+        padding: 0 0 0 80px;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        &-title {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1;
+            padding-bottom: 8px;
+            text-transform: none;
+        } 
+        &-subscribe {
+            color: #C12025;
+            text-transform: uppercase;
+
+        }
+    }
+}
