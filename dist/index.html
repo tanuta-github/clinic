@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание" />
-    <title></title>
+    <title>Клиника</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/jsCalendar.css" />
     <link rel="stylesheet" href="css/choices.min.css" />
@@ -15,9 +15,10 @@
 
 <body>
 
-    <div class="wrapper">
+    <div class="wrapper" id="top">
         <header class="header">
             <div class="container">
+                <div class="header__warning" style="display: none;"><span class="header__warning-title"><img src="images/icons/icon-warning.svg" alt="" />Уважаемые пациенты!</span><p><strong>C 7 ноября 2021</strong> наши клиники (поликлинические и стационарные отделения) работают в обычном режиме</p></div>
                 <div class="row align-items-center">
                     <div class="col-auto">
                         <a href="#" class="header__logo"><img src="images/logo.png" alt="" /> </a>
@@ -49,9 +50,28 @@
                         </div>
                     </div>
                 </div>
+    
             </div>
             <div class="header__menu">
                 <div class="container">
+                    <div class="header__popup">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="header__popup-title">Детское отделение. Хирургия</div>
+                                <img src="images/icons/icon-map1.svg" alt="" />
+                                
+                            </div>
+                            <div class="col-4">
+                                <div class="header__popup-title">Взрослое отделение</div>
+                                <img src="images/icons/icon-map2.svg" alt="" />
+                            </div>
+                            <div class="col-4">
+                                <div class="header__popup-title">Диагностический центр</div>
+                                <img src="images/icons/icon-map1.svg" alt="" />
+                            </div>
+                        </div>
+                    
+                    </div>
                     <div class="row align-items-center">
                         <div class="col-auto">
                             <div class="header__search">
@@ -79,7 +99,7 @@
                 </div>
             </div>
         </header>
-        <section class="banner">
+        <div class="banner">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -102,7 +122,7 @@
                                 src="images/icon-banner-heart.png" alt="" /></span>Подобрать <br />спецпредложения</a>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="directions">
             <div class="container">
                 <h2 class="directions__title">Направления</h2>
@@ -327,7 +347,7 @@
                     <h2 class="help-form__title">МЫ ПОМОЖЕМ ВАМ <br>В ВЫБОРЕ ВРАЧА</h2>
                     <p class="help-form__desc">Оставьте <span class="w">заявку</span> и мы свяжемся с Вами в ближайшее
                         время!</p>
-                    <form class="help-form__fields" id="help-form"
+                    <form class="help-form__fields"
                         onsubmit="document.getElementById('help-form-success').className +=' show'; return false">
                         <div class="row">
                             <div class="col-6"><input type="text" class="help-form__fields-input" name="name"
@@ -339,7 +359,7 @@
                         <button class="help-form__fields-btn">Оставить заявку</button>
                         <label class="help-form__fields-small"><input type="checkbox" name="check" required checked />
                             Нажимая кнопку, я соглашаюсь с условиями политики конфиденциальности</label>
-                        <div class="help-form__fields-small"></span>*- обязательные поля для заполнения</div>
+                        <div class="help-form__fields-small">*- обязательные поля для заполнения</div>
                     </form>
 
                     <div class="help-form__success collapse" id="help-form-success">
@@ -354,7 +374,7 @@
                 </div>
             </div>
         </section>
-        <section class="digits">
+        <div class="digits">
             <div class="container">
                 <div class="row">
                     <div class="col-3">
@@ -406,7 +426,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="services">
             <div class="container">
                 <h3 class="title">Услуги</h3>
@@ -718,7 +738,7 @@
         <section class="about">
             <h3 class="title1">О клинике</h3>
             <div class="container">
-                <div class="nav tab-content">
+                <div class="nav tab-content" role="tablist">
                     <button type="button" class="about__btn" role="tab" data-bs-toggle="pill"
                         data-bs-target="#about-tab1" aria-selected="true">
                         <span class="about__btn-num">1</span><span class="about__btn-text">Профессионализм</span>
@@ -863,7 +883,7 @@
                                 <label class="help-form__fields-small"><input type="checkbox" name="check" required
                                         checked />
                                     Нажимая кнопку, я соглашаюсь с условиями политики конфиденциальности</label>
-                                <div class="help-form__fields-small"></span>*- обязательные поля для заполнения</div>
+                                <div class="help-form__fields-small">*- обязательные поля для заполнения</div>
                             </form>
 
                             <div class="help-form__success collapse" id="help-form-success1">
@@ -889,7 +909,7 @@
                         <div class="swiper-slide">
                             <div class="client-reviews__item">
                                 <img class="client-reviews__item-img" src="images/client-reviews/review1.jpg" alt="" />
-                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" />TANYA.GUBENKO</div>
+                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>TANYA.GUBENKO</span></div>
                                 <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
                                 <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
                             </div>
@@ -897,7 +917,7 @@
                         <div class="swiper-slide">
                             <div class="client-reviews__item">
                                 <img class="client-reviews__item-img" src="images/client-reviews/review2.jpg" alt="" />
-                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" />PTUXERMAN</div>
+                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>PTUXERMAN</span></div>
                                 <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
                                 <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
                             </div>
@@ -905,7 +925,7 @@
                         <div class="swiper-slide">
                             <div class="client-reviews__item">
                                 <img class="client-reviews__item-img" src="images/client-reviews/review3.jpg" alt="" />
-                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" />STUZHUK_SOFIA</div>
+                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>STUZHUK_SOFIA</span></div>
                                 <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
                                 <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
                             </div>
@@ -913,7 +933,7 @@
                           <div class="swiper-slide">
                               <div class="client-reviews__item">
                                  <img class="client-reviews__item-img" src="images/client-reviews/review4.jpg" alt="" />
-                                 <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" />NATALIMAZUR_SPORT</div>
+                                 <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>NATALIMAZUR_SPORT</span></div>
                                 <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
                                 <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
                               </div>
@@ -966,7 +986,7 @@
         </section>
         <section class="licenses">
             <div class="container">
-                <div class="title1">Лицензии</div>
+                <h2 class="title1">Лицензии</h2>
                 <div class="swiper swiper-5">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="images/license.png" alt="" /></div>
@@ -984,12 +1004,12 @@
         </section>
         <section class="info bg-light-gray">
             <div class="info__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.7961625485077!2d30.380216424412488!3d50.425108742986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb92733f86d5%3A0xe85ba68790f39ddd!2z0JrQu9C40L3QuNC60LAg0JLRi9GF0L7QtNC90L7Qs9C-INCU0L3Rjw!5e0!3m2!1sru!2sua!4v1645251173352!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.7961625485077!2d30.380216424412488!3d50.425108742986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb92733f86d5%3A0xe85ba68790f39ddd!2z0JrQu9C40L3QuNC60LAg0JLRi9GF0L7QtNC90L7Qs9C-INCU0L3Rjw!5e0!3m2!1sru!2sua!4v1645251173352!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="container">
                 <div class="col-6">
                     <img src="/images/logo.png" class="info__logo" alt="" />
-                    <div class="info__title">Клиника выходного дня</div>
+                    <h4 class="info__title">Клиника выходного дня</h4>
                     <div class="row">
                         <div class="col-6">
                             <div class="info__schedule">
@@ -1030,7 +1050,7 @@
                 </div>
             </div>
         </section>
-        <section class="form-call">
+        <div class="form-call">
             <div class="container">
                     <div class="row">
                         <div class="col-auto">
@@ -1053,61 +1073,215 @@
                         </div>
                     </div>
             </div>
-        </section>
+        </div>
         <footer class="footer">
             <div class="container">
-                <div class="col-4">
-                    <img src="images/logo-footer.png" alt="" />
-                    <div class="footer__desc">
-                        <p>
-                            Клиника Выходного Дня – частный медицинский центр, предоставляющий услуги профильных специалистов в области терапии, хирургии, гинекологии, проктологии, педиатрии, дерматологии, эндокринологии, а также других врачей. В команде Клиники работают высококлассные специалисты, которые проводят наблюдение и лечение пациентов любого возраста.
-                            Наши доктора – наш главный актив. Это команда профессионалов, которые умеют не только распознать болезнь, но и подсказать эффективные пути устранения и профилактики недуга.
-                            </p><p>
-                            Мы не просто лечим – мы учим вас не болеть!
-                            </p><p>
-                            Лечим взрослых и детей, занимаемся профилактикой болезней и обучаем быть здоровыми.</p>
+                <div class="row">
+                    <div class="col-4 position-relative">
+                        <img src="images/logo-footer.png" alt="" />
+                        <div class="footer__desc">
+                            <p>
+                                Клиника Выходного Дня – частный медицинский центр, предоставляющий услуги профильных специалистов в области терапии, хирургии, гинекологии, проктологии, педиатрии, дерматологии, эндокринологии, а также других врачей. В команде Клиники работают высококлассные специалисты, которые проводят наблюдение и лечение пациентов любого возраста.
+                                Наши доктора – наш главный актив. Это команда профессионалов, которые умеют не только распознать болезнь, но и подсказать эффективные пути устранения и профилактики недуга.
+                                </p><p>
+                                Мы не просто лечим – мы учим вас не болеть!
+                                </p><p>
+                                Лечим взрослых и детей, занимаемся профилактикой болезней и обучаем быть здоровыми.</p>
+                        </div>
+                        <div class="footer__search">
+                            <form action="#">
+                                <input type="text" class="footer__search-input" placeholder="Начните поиск" />
+                                <button type="submit" class="footer__search-btn"></button>
+                            </form>
+                        </div>
+                        <button class="footer__error-btn" data-bs-toggle="collapse" data-bs-target="#footer__popup">Сообщить об ошибке</button>
+                        <div class="footer__popup collapse" id="footer__popup">
+                            <button type="button" class="close" data-bs-toggle="collapse" data-bs-target="#footer__popup" aria-expanded="false"></button>
+                            <div class="footer__popup-form">
+                                <div class="footer__popup-title">
+                                    Сообщить об ошибке
+                                </div>
+                                <form action="#" id="footer-popup">
+                                    <label class="label-radio"><input type="radio" name="error-type" checked value="1" /><span>Ошибка в тексте</span></label>
+                                    <label class="label-radio"><input type="radio" name="error-type" value="2" /><span>Что-то не работает</span></label>
+                                    <label class="label-radio"><input type="radio" name="error-type" value="3" /><span>Идея, пожелания</span></label>
+                                    <textarea class="textarea" placeholder="Напишите сообщение" name="message"></textarea>
+                                    <div class="footer__popup-text">Введите e-mail, чтобы получить ответ*</div> 
+                                    <input type="text" class="input" name="email" required value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                                    <div class="footer__popup-text1">*- обязательные поля для заполнения</div>
+                                    <button type="submit" class="footer__popup-btn">Отправить</button>
+                                    <div class="footer__popup-text2">Нажимая кнопку, я соглашаюсь <br />
+                                        с <a href="#">условиями политики конфиденциальности</a></div>
+                                </form>
+                            </div>
+                            <div class="footer__popup-success">
+                                Сообщение успешно отправлено
+                            </div>
+                            
+                        </div>
+                        <div class="footer__copyright">Copyright © 2022  Все права защищены</div>
                     </div>
-                    <div class="footer__search">
-                        <form action="#">
-                            <input type="text" class="footer__search-input" placeholder="Начните поиск" />
-                            <button type="submit" class="footer__search-btn"></button>
-                        </form>
+                    <div class="col">
+                        <div class="footer__menu">
+                            <div class="row">
+                                <div class="col-5">
+                                    <ul class="footer__menu-list">
+                                        <li><a href="#">О клинике</a></li>
+                                        <li><a href="#">Отзывы</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                        <li><a href="#">Партнерам</a></li>
+                                        <li><a href="#">Новости</a></li>
+                                        <li><a href="#">Акции</a></li>
+                                        <li><a href="#">Блог</a></li>
+                                    </ul> 
+                                </div>
+                                <div class="col">
+                                    <ul class="footer__menu-list">
+                                        <li><a href="#">Взрослое отделение</a></li>
+                                        <li><a href="#">Детское отделение</a></li>
+                                        <li><a href="#">Диагностика</a></li>
+                                        <li><a href="#">Оформление справок</a></li>
+                                        <li><a href="#">УЗИ</a></li>
+                                        <li><a href="#">Задати питання лікарю</a></li>
+                                        <li><a href="#">Пацієнтам</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__tab">
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab1" aria-expanded="false">Направления</button>
+                                <div class="footer__tab-content collapse" id="footer-tab1">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Гастроэнтеролог</a></li>
+                                                <li><a href="#">Гастроэнтеролог детский</a></li>
+                                                <li><a href="#">Гематолог</a></li>
+                                                <li><a href="#">Гепатолог</a></li>
+                                                <li><a href="#" class="footer__menu-list-all">Посмотреть всех</a></li>
+                                            </ul> 
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Гинеколог</a></li>
+                                                <li><a href="#">Гинеколог детский</a></li>
+                                                <li><a href="#">Дерматолог</a></li>
+                                                <li><a href="#">Дерматолог детский</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__tab">
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab2" aria-expanded="false">Что мы лечим</button>
+                                <div class="footer__tab-content collapse" id="footer-tab2">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Заболевание 1</a></li>
+                                                <li><a href="#">Заболевание 2</a></li>
+                                                <li><a href="#">Заболевание 3</a></li>
+                                                <li><a href="#">Заболевание 4</a></li>
+                                                <li><a href="#" class="footer__menu-list-all">Посмотреть все</a></li>
+                                            </ul> 
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Заболевание 5</a></li>
+                                                <li><a href="#">Заболевание 6</a></li>
+                                                <li><a href="#">Заболевание 7</a></li>
+                                                <li><a href="#">Заболевание 8</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__tab">
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab3" aria-expanded="false">Услуги</button>
+                                <div class="footer__tab-content collapse" id="footer-tab3">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Комплексные услуги</a></li>
+                                                <li><a href="#">Консультации</a></li>
+                                                <li><a href="#">Диагностика</a></li>
+                                                <li><a href="#">Лечение</a></li>
+                                                <li><a href="#" class="footer__menu-list-all">Посмотреть все</a></li>
+                                            </ul> 
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Операции, хирургия</a></li>
+                                                <li><a href="#">Вакцинация</a></li>
+                                                <li><a href="#">Физиотерапия</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__tab">
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab4" aria-expanded="false">Наши специалисты</button>
+                                <div class="footer__tab-content collapse" id="footer-tab4">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Екатерина Алексеевна Яловенко</a></li>
+                                                <li><a href="#">Анна Александровна Глуговская</a></li>
+                                                <li><a href="#">Денис Александрович Радионов</a></li>
+                                                <li><a href="#">Александр Сергеевич Бойко</a></li>
+                                                <li><a href="#" class="footer__menu-list-all">Посмотреть все</a></li>
+                                            </ul> 
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="footer__menu-list">
+                                                <li><a href="#">Анна Николаевна Унинец</a></li>
+                                                <li><a href="#">Оксана Анатольевна Ткач</a></li>
+                                                <li><a href="#">Татьяна Руслановна Васильчук</a></li>
+                                                <li><a href="#">Андрей Николаевич Кулик</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="footer__error-btn">Сообщить об ошибке</button>
-                    <div class="footer__popup-error">
-                        
+                    <div class="col-auto">
+                        <div class="footer__address">
+                            <div class="footer__address-title">
+                                Адреса в Киеве
+                            </div>
+                            <div class="footer__address-item">
+                                <strong>г. Киев, б-р Кольцова, 14-з</strong> <br/>
+                                Детское отделение. Хирургия
+                            </div>
+                            <div class="footer__address-item">
+                                <strong>г. Киев, б-р Кольцова, 14-л</strong><br/>
+                                Взрослое отделение
+                            </div>      
+                        </div>
+                        <div class="footer__phone">
+                            <span class="footer__phone-number">0800 30 30 18</span> <br />
+                            Безкоштовно зі всіх операторів
+                        </div>
+                        <div class="footer__schedule">
+                            <div class="footer__schedule-title">График работы:</div>
+                            Без выходных <br />
+                            Пн. - Пт. 7:00 - 21:00 <br />
+                            Сб. - Вс. 8:00 - 21:00
+                        </div>
                     </div>
-                    <div class="footer__copyright">Copyright © 2022  Все права защищены</div>
-                </div>
-                <div class="col"></div>
-                <div class="col-1"></div>
-                
-
-
+                </div>              
             </div>
         </footer>
-    </div>
-
-    <!--
-    modal bootstrap
-    <section>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-        </button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  Modal
-              </div>
+        <div class="scroll-block" id="scroll-block">
+            <div class="collapse" id="scroll-block-mes">
+                <a class="scroll-block__telegram" href="#"></a>
+                <a class="scroll-block__phone" href="#"></a>
+                <a class="scroll-block__wa" href="#"></a>
             </div>
+            <a class="scroll-block__mes" href="#scroll-block-mes" data-bs-toggle="collapse" data-bs-target="#scroll-block-mes"></a>
+            <a class="scroll-block__to-top" href="#top"></a>
         </div>
-    </section>
-    modal-->
-    <!--
-    -->
-    
-
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/jsCalendar.js"></script>

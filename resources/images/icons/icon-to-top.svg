@@ -1,0 +1,9 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<rect y="50" width="50" height="50" rx="5" transform="rotate(-90 0 50)" fill="#67CCC1"/>
+<line x1="0.5" y1="-0.5" x2="11.9784" y2="-0.5" transform="matrix(-0.707107 -0.707107 0.570396 -0.82137 34.4199 32.3535)" stroke="white" stroke-linecap="square" stroke-linejoin="bevel"/>
+<line x1="0.5" y1="-0.5" x2="11.9784" y2="-0.5" transform="matrix(0.707107 -0.707107 -0.570396 -0.82137 16.7734 32.3535)" stroke="white" stroke-linecap="square" stroke-linejoin="bevel"/>
+<line x1="0.5" y1="-0.5" x2="11.9784" y2="-0.5" transform="matrix(-0.707082 -0.707131 0.570369 -0.821388 34.4199 22.0586)" stroke="white" stroke-linecap="square" stroke-linejoin="bevel"/>
+<line x1="0.5" y1="-0.5" x2="11.9784" y2="-0.5" transform="matrix(0.707117 -0.707097 -0.570406 -0.821363 16.7734 22.0586)" stroke="white" stroke-linecap="square" stroke-linejoin="bevel"/>
+</g>
+</svg>

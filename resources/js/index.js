@@ -55,11 +55,32 @@ document.getElementById("form-call").addEventListener("submit", function(event){
   event.preventDefault();
   
 })
+/***************** */
+document.getElementById("footer-popup").addEventListener("submit", function(event){
+  event.preventDefault();
+  document.querySelector('.footer__popup-form').style.display = 'none'
+  document.querySelector('.footer__popup-success').style.display = 'block'
+})
+/*****************/
+document.addEventListener("scroll", event => {
+  document.getElementById('scroll-block').className = (document.scrollingElement.scrollTop > window.innerHeight) ? "scroll-block show" : "scroll-block";
 
 
+})
 
+/*
+const content = document.getElementById("content");
+document.addEventListener("scroll", (e) => {
 
+  var scrolled = document.scrollingElement.scrollTop;
+  var position = content.offsetTop;
 
+  if(scrolled > position + 100){
+    content.classList.add(
+      'curtain-in');
+    }
+});
+*/
 
 
 

@@ -1,0 +1,35 @@
+.scroll-block {
+    position: fixed;
+    z-index: 100;
+    right: 50px;
+    bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    a {
+        width: 55px;
+        height: 60px;
+        cursor: pointer;
+        display: block;
+    }
+    &__to-top {
+        background: url(../images/icons/icon-to-top.svg) no-repeat 50%;
+    }
+    &__mes {
+        background: url(../images/icons/icon-message.svg) no-repeat 50%;
+    }
+    &__telegram {
+        background: url(../images/icons/icon-telegram.svg) no-repeat 50%;
+    }
+    &__phone {
+        background: url(../images/icons/icon-phone.svg) no-repeat 50%;
+    }
+    &__wa {
+        background: url(../images/icons/icon-wa.svg) no-repeat 50%;
+    }
+    /*&__mes[aria-expanded="true"] {
+        display: none;
+    }*/
+}
+.scroll-block.show {
+    opacity: 1;
+}
