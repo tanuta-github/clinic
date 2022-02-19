@@ -63,25 +63,11 @@ document.getElementById("footer-popup").addEventListener("submit", function(even
 })
 /*****************/
 document.addEventListener("scroll", event => {
-  document.getElementById('scroll-block').className = (document.scrollingElement.scrollTop > window.innerHeight) ? "scroll-block show" : "scroll-block";
-
-
+  document.getElementById('scroll-block').className = (document.scrollingElement.scrollTop > window.innerHeight) ? "scroll-block show" : "scroll-block"
+  document.querySelector('.header').className = (document.scrollingElement.scrollTop > 2) ? "header header-fixed" : "header"
 })
 
-/*
-const content = document.getElementById("content");
-document.addEventListener("scroll", (e) => {
-
-  var scrolled = document.scrollingElement.scrollTop;
-  var position = content.offsetTop;
-
-  if(scrolled > position + 100){
-    content.classList.add(
-      'curtain-in');
-    }
-});
-*/
-
+ 
 
 
 
