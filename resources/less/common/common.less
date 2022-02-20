@@ -10,13 +10,24 @@ body.modal-open {
     padding-right: 17px;
   }
 }
+/********************/
+/*.wrapper {
+  .media(mobile, {width: 375px;});
+
+}
+.header {
+  .media(mobile, {
+  width: 375px !important;
+  left: 50% !important;
+  margin-left: -187.5px;});
+}*/
+/*****************/
+
+
 .wrapper {
-  /*max-width: 1920px;*/
+  max-width: 1920px;
   margin: 0 auto;
   overflow: hidden;
-  .media(mobile, {
-    display: none;
-  });
 }
 .container {
   margin: 0 auto;
@@ -288,4 +299,21 @@ body.modal-open {
   padding: 5px 10px;
   background: @color-white;
   border: 1px solid @color-gray3;
+}
+.d-xs-none {
+  .media(mobile, {display: none });
+}
+.xs-p0 {
+  .media(mobile, { padding: 0; });
+}
+.col-xs {
+  .media(mobile, {
+    flex: 1 0 0%;
+  });
+}
+
+.directions, .help-form, .digits, .services, .specialists, .stocks, .news, .about, .client-reviews, .reviews, .licenses, .info, .form-call, .footer {
+  .media(mobile, {
+    display: none;
+  })
 }

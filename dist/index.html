@@ -13,83 +13,140 @@
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
-<body> 
+<body>
 
     <div class="wrapper" id="top">
         <header class="header">
             <div class="container">
-                <div class="header__warning" style="display: none;"><span class="header__warning-title"><img src="images/icons/icon-warning.svg" alt="" />Уважаемые пациенты!</span><p><strong>C 7 ноября 2021</strong> наши клиники (поликлинические и стационарные отделения) работают в обычном режиме</p></div>
+                <div class="header__warning" style="display: none;"><span class="header__warning-title"><img
+                            src="images/icons/icon-warning.svg" alt="" />Уважаемые пациенты!</span>
+                    <p><strong>C 7 ноября 2021</strong> наши клиники (поликлинические и стационарные отделения) работают
+                        в обычном режиме</p>
+                </div>
                 <div class="row align-items-center">
-                    <div class="col-auto">
-                        <a href="#" class="header__logo"><img src="images/logo.png" alt="" /> </a>
+                    <div class="col-auto col-xs">
+                        <div class="header__xs-menu-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16"
+                                fill="none">
+                                <path
+                                    d="M0.75 15.5H23.25V13H0.75V15.5ZM0.75 9.25H23.25V6.75H0.75V9.25ZM0.75 0.5V3H23.25V0.5H0.75Z" />
+                            </svg>
+                        </div>
+                        <div class="header__xs-search"></div>
+                        <a class="header__xs-phone" href="tel:0800303018"></a>
+                        <a href="#" class="header__logo"><img src="images/logo.png" alt="" /></a>
+                        <form action="#" class="header__xs-search-form">
+                            <input type="text" class="header__xs-search-form-input" placeholder="Поиск по сайту"
+                                value="" />
+                            <div class="header__xs-search-form-clear">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="-1" x2="17.2308" y2="-1"
+                                        transform="matrix(0.690474 0.723357 -0.724917 0.688836 0.896484 1.89746)"
+                                        stroke="#fff" stroke-width="2" />
+                                    <line y1="-1" x2="17.2308" y2="-1"
+                                        transform="matrix(0.716572 -0.697513 0.699134 0.714991 1.61328 14.1016)"
+                                        stroke="#fff" stroke-width="2" />
+                                </svg>
+                            </div>
+                            <button class="header__xs-search-form-btn"></button>
+                            <div class="search-result">
+                                <div class="search-result__title">Направления:</div>
+                                <ul class="search-result__list">
+                                    <li><strong>Проктол</strong>огия Киева RU</li>
+                                    <li><strong>Проктол</strong>огия Киева UA</li>
+                                    <li>Центр <strong>прокто</strong>логии в Киеве RU</li>
+                                </ul>
+                                <div class="search-result__title">Врачи:</div>
+                                <ul class="search-result__list">
+                                    <li>
+                                        Александр Сергеевич Бойко <br />
+                                        <strong>Проктол</strong>ог, эндоскопист
+                                    </li>
+                                    <li>
+                                        Андрей Николаевич Кулик<br />
+                                        <strong>Проктол</strong>ог
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                        </form>
+                        <div class="close"></div>
                     </div>
-                    <div class="col">
+                    <div class="col d-xs-none">
                         <div class="header__phone">
                             <a href="tel:0800303018" class="header__phone-number">0800 30 30 18</a>
                             <span class="header__phone-text">Безкоштовно зі всіх операторів</span>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="header__btn-online" data-bs-toggle="modal" data-bs-target="#popup-call">Запис Онлайн</div>
+                    <div class="col-2 d-xs-none">
+                        <div class="header__btn-online" data-bs-toggle="modal" data-bs-target="#popup-call">Запис Онлайн
+                        </div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto xs-p0">
                         <div class="header__personal">
                             <i class="header__personal-icon"></i>
                             Личный кабинет
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 d-xs-none b1">
                         <div class="header__address-link" data-bs-toggle="collapse" data-bs-target="#header-popup">
                             Адреса и время работы
                         </div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto xs-p0">
                         <div class="header__lang">
-                            <a href="#" class="header__lang-link active">UA</a>
+                            <a href="#" class="header__lang-link-active">UA</a>
                             <a href="#" class="header__lang-link">RU</a>
                         </div>
                     </div>
                 </div>
-    
+
             </div>
             <div class="header__menu">
                 <div class="container">
                     <div class="header__popup collapse" id="header-popup">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="header__popup-title">Детское отделение. Хирургия</div>
-                                <div class="header__popup-address"><img src="images/icons/icon-map1.svg" alt="" />г. Киев, б-р Кольцова, 14-з</div>
-                                <div class="header__popup-phone"><img src="images/icons/icon-phone1.svg" alt="" /> Телефон: 0800 30-30-18</div>
+                                <div class="header__popup-address"><img src="images/icons/icon-map1.svg" alt="" />г.
+                                    Киев, б-р Кольцова, 14-з</div>
+                                <div class="header__popup-phone"><img src="images/icons/icon-phone1.svg" alt="" />
+                                    Телефон: 0800 30-30-18</div>
                                 <div class="header__popup-schedule">
                                     Часы работы: <span class="blue">без выходных</span><br />
-                                    Пн.-Пт.  7:00 - 21:00<br />
+                                    Пн.-Пт. 7:00 - 21:00<br />
                                     Сб.-Вс.8:00 - 21:00
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4">
                                 <div class="header__popup-title">Взрослое отделение</div>
-                                <div class="header__popup-address"><img src="images/icons/icon-map2.svg" alt="" />г. Киев, б-р Кольцова, 14-л</div>
-                                <div class="header__popup-phone"><img src="images/icons/icon-phone1.svg" alt="" /> Телефон: 0800 30-30-18</div>
+                                <div class="header__popup-address"><img src="images/icons/icon-map2.svg" alt="" />г.
+                                    Киев, б-р Кольцова, 14-л</div>
+                                <div class="header__popup-phone"><img src="images/icons/icon-phone1.svg" alt="" />
+                                    Телефон: 0800 30-30-18</div>
                                 <div class="header__popup-schedule">
                                     Часы работы: <span class="blue">без выходных</span><br />
-                                    Пн.-Пт.  7:00 - 21:00<br />
+                                    Пн.-Пт. 7:00 - 21:00<br />
                                     Сб.-Вс.8:00 - 21:00
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4"> 
                                 <div class="header__popup-title">Диагностический центр</div>
-                                <div class="header__popup-address"><img src="images/icons/icon-map3.svg" alt="" />г. Киев, б-р Кольцова, 16-а</div>
-                                <div class="header__popup-phone"><img src="images/icons/icon-phone1.svg" alt="" /> Телефон: 0800 30-30-18</div>
+                                <div class="header__popup-address"><img src="images/icons/icon-map3.svg" alt="" />г.
+                                    Киев, б-р Кольцова, 16-а</div>
+                                <div class="header__popup-phone"><img src="images/icons/icon-phone1.svg" alt="" />
+                                    Телефон: 0800 30-30-18</div>
                                 <div class="header__popup-schedule">
                                     Часы работы: <span class="blue">без выходных</span><br />
-                                    Пн.-Пт.  7:00 - 21:00<br />
+                                    Пн.-Пт. 7:00 - 21:00<br />
                                     Сб.-Вс.8:00 - 21:00
                                 </div>
                             </div>
                         </div>
-                    
+
                     </div>
-                    <div class="row align-items-center">
+                    <div class="row align-items-center b2">
                         <div class="col-auto">
                             <div class="header__search">
                                 <form action="#">
@@ -143,14 +200,14 @@
         <section class="directions">
             <div class="container">
                 <h2 class="directions__title">Направления</h2>
-                <div class="row">
+                <div class="row directions__row">
                     <div class="col">
                         <div class="directions__nav nav" role="tablist">
                             <button class="active" data-bs-toggle="pill" data-bs-target="#experts" type="button"
                                 role="tab" aria-selected="true">Специалисты</button>
-                            <button data-bs-toggle="pill" data-bs-target="#experts" type="button" role="tab"
+                            <button data-bs-toggle="pill" data-bs-target="#diagnostics" type="button" role="tab"
                                 aria-selected="false">Диагностика</button>
-                            <button data-bs-toggle="pill" data-bs-target="#experts" type="button" role="tab"
+                            <button data-bs-toggle="pill" data-bs-target="#analyzes" type="button" role="tab"
                                 aria-selected="false">Анализы</button>
                         </div>
                     </div>
@@ -158,12 +215,12 @@
                         <a href="#" class="directions__book">Справочник заболеваний</a>
                     </div>
                 </div>
-
             </div>
             <div class="directions__content">
                 <div class="container">
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="experts" role="tabpanel">
+                        <div class="directions__xs-nav" data-bs-toggle="collapse" data-bs-target="#experts">Специалисты</div>
+                        <div class="tab-pane collapse show active" id="experts" role="tabpanel">
                             <div class="directions__nav-inner nav" role="tablist">
                                 <button class="active" data-bs-toggle="pill" data-bs-target="#adult-doctors" role="tab"
                                     type="button" aria-selected="true">Взрослые врачи</button>
@@ -351,8 +408,10 @@
                             </div>
 
                         </div>
-                        <div class="tab-pane fade" id="diagnostics" role="tabpanel">Диагностика</div>
-                        <div class="tab-pane fade" id="analyzes" role="tabpanel">Анализы</div>
+                        <div class="directions__xs-nav" data-bs-toggle="collapse" data-bs-target="#diagnostics">Диагностика</div>
+                        <div class="tab-pane " id="diagnostics" role="tabpanel">Диагностика</div>
+                        <div class="directions__xs-nav" data-bs-toggle="collapse" data-bs-target="#analyzes">Анализы</div>
+                        <div class="tab-pane" id="analyzes" role="tabpanel">Анализы</div>
                     </div>
                 </div>
             </div>
@@ -915,8 +974,6 @@
                     </div>
                 </div>
             </div>
-
-
         </section>
         <section class="client-reviews">
             <div class="container">
@@ -926,34 +983,50 @@
                         <div class="swiper-slide">
                             <div class="client-reviews__item">
                                 <img class="client-reviews__item-img" src="images/client-reviews/review1.jpg" alt="" />
-                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>TANYA.GUBENKO</span></div>
-                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
-                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
+                                <div class="client-reviews__item-mask"><img
+                                        src="images/icons/icon-client-reviews-insta.svg"
+                                        alt="" /><span>TANYA.GUBENKO</span></div>
+                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
+                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img
+                                        src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-reviews__item">
                                 <img class="client-reviews__item-img" src="images/client-reviews/review2.jpg" alt="" />
-                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>PTUXERMAN</span></div>
-                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
-                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
+                                <div class="client-reviews__item-mask"><img
+                                        src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>PTUXERMAN</span>
+                                </div>
+                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
+                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img
+                                        src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="client-reviews__item">
                                 <img class="client-reviews__item-img" src="images/client-reviews/review3.jpg" alt="" />
-                                <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>STUZHUK_SOFIA</span></div>
-                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
-                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
+                                <div class="client-reviews__item-mask"><img
+                                        src="images/icons/icon-client-reviews-insta.svg"
+                                        alt="" /><span>STUZHUK_SOFIA</span></div>
+                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
+                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img
+                                        src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
                             </div>
-                         </div>
-                          <div class="swiper-slide">
-                              <div class="client-reviews__item">
-                                 <img class="client-reviews__item-img" src="images/client-reviews/review4.jpg" alt="" />
-                                 <div class="client-reviews__item-mask"><img src="images/icons/icon-client-reviews-insta.svg" alt="" /><span>NATALIMAZUR_SPORT</span></div>
-                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
-                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
-                              </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-reviews__item">
+                                <img class="client-reviews__item-img" src="images/client-reviews/review4.jpg" alt="" />
+                                <div class="client-reviews__item-mask"><img
+                                        src="images/icons/icon-client-reviews-insta.svg"
+                                        alt="" /><span>NATALIMAZUR_SPORT</span></div>
+                                <div class="client-reviews__item-text">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et...</div>
+                                <a href="#" class="client-reviews__item-link">Смотреть в Инстаграм <img
+                                        src="images/icons/icon-client-reviews-insta2.svg" alt=""></a>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -997,7 +1070,7 @@
                                 <img src="images/reviews/review6.png" alt="" />
                             </div>
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1021,7 +1094,9 @@
         </section>
         <section class="info bg-light-gray">
             <div class="info__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.7961625485077!2d30.380216424412488!3d50.425108742986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb92733f86d5%3A0xe85ba68790f39ddd!2z0JrQu9C40L3QuNC60LAg0JLRi9GF0L7QtNC90L7Qs9C-INCU0L3Rjw!5e0!3m2!1sru!2sua!4v1645251173352!5m2!1sru!2sua" allowfullscreen="" loading="lazy"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.7961625485077!2d30.380216424412488!3d50.425108742986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb92733f86d5%3A0xe85ba68790f39ddd!2z0JrQu9C40L3QuNC60LAg0JLRi9GF0L7QtNC90L7Qs9C-INCU0L3Rjw!5e0!3m2!1sru!2sua!4v1645251173352!5m2!1sru!2sua"
+                    allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="container">
                 <div class="col-6">
@@ -1030,9 +1105,9 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="info__schedule">
-                                    <span class="blue">График работы:</span>
-                                    Без выходных 7:00 - 21:00 <br/>
-                                    Сб. - Вс. 8:00 - 21:00
+                                <span class="blue">График работы:</span>
+                                Без выходных 7:00 - 21:00 <br />
+                                Сб. - Вс. 8:00 - 21:00
                             </div>
                             <div class="info__mail">
                                 <img src="images/icons/icon-info-mail.svg" alt="" />
@@ -1049,7 +1124,7 @@
                                     <span class="blue">Взрослое отделение</span>
                                 </div>
                             </div>
-                            
+
 
                         </div>
                         <div class="col-6">
@@ -1061,7 +1136,8 @@
                         </div>
                     </div>
                     <div class="info__youtube">
-                        <div class="info__youtube-title"><span class="info__youtube-subscribe">Подпишись</span> на наш канал в YouTube</div>
+                        <div class="info__youtube-title"><span class="info__youtube-subscribe">Подпишись</span> на наш
+                            канал в YouTube</div>
                         Следи за новостями и акциями
                     </div>
                 </div>
@@ -1069,26 +1145,27 @@
         </section>
         <div class="form-call">
             <div class="container">
-                    <div class="row">
-                        <div class="col-auto">
-                            <div class="form-call__title">
-                                Хотите, перезвоним Вам 
-                                <span>за 30 секунд?</span>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <form action="#" class="form-call__form" id="form-call"> 
-                                <input type="text" class="form-call__input" data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value="" required />
-                                <button type="submit" class="form-call__btn">ПЕРЕЗВОНИТЕ</button>
-                            </form>
-                        </div>
-                        <div class="col-auto">
-                            <div class="form-call__timer">
-                                <img src="images/icons/icon-clock.svg" alt="" />
-                                <span>00</span>:<span class="orange">29</span>
-                            </div>
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="form-call__title">
+                            Хотите, перезвоним Вам
+                            <span>за 30 секунд?</span>
                         </div>
                     </div>
+                    <div class="col">
+                        <form action="#" class="form-call__form" id="form-call">
+                            <input type="text" class="form-call__input"
+                                data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value="" required />
+                            <button type="submit" class="form-call__btn">ПЕРЕЗВОНИТЕ</button>
+                        </form>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-call__timer">
+                            <img src="images/icons/icon-clock.svg" alt="" />
+                            <span>00</span>:<span class="orange">29</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer">
@@ -1098,11 +1175,18 @@
                         <img src="images/logo-footer.png" alt="" />
                         <div class="footer__desc">
                             <p>
-                                Клиника Выходного Дня – частный медицинский центр, предоставляющий услуги профильных специалистов в области терапии, хирургии, гинекологии, проктологии, педиатрии, дерматологии, эндокринологии, а также других врачей. В команде Клиники работают высококлассные специалисты, которые проводят наблюдение и лечение пациентов любого возраста.
-                                Наши доктора – наш главный актив. Это команда профессионалов, которые умеют не только распознать болезнь, но и подсказать эффективные пути устранения и профилактики недуга.
-                                </p><p>
+                                Клиника Выходного Дня – частный медицинский центр, предоставляющий услуги профильных
+                                специалистов в области терапии, хирургии, гинекологии, проктологии, педиатрии,
+                                дерматологии, эндокринологии, а также других врачей. В команде Клиники работают
+                                высококлассные специалисты, которые проводят наблюдение и лечение пациентов любого
+                                возраста.
+                                Наши доктора – наш главный актив. Это команда профессионалов, которые умеют не только
+                                распознать болезнь, но и подсказать эффективные пути устранения и профилактики недуга.
+                            </p>
+                            <p>
                                 Мы не просто лечим – мы учим вас не болеть!
-                                </p><p>
+                            </p>
+                            <p>
                                 Лечим взрослых и детей, занимаемся профилактикой болезней и обучаем быть здоровыми.</p>
                         </div>
                         <div class="footer__search">
@@ -1111,20 +1195,27 @@
                                 <button type="submit" class="footer__search-btn"></button>
                             </form>
                         </div>
-                        <button class="footer__error-btn" data-bs-toggle="collapse" data-bs-target="#footer__popup">Сообщить об ошибке</button>
+                        <button class="footer__error-btn" data-bs-toggle="collapse"
+                            data-bs-target="#footer__popup">Сообщить об ошибке</button>
                         <div class="footer__popup collapse" id="footer__popup">
-                            <button type="button" class="close" data-bs-toggle="collapse" data-bs-target="#footer__popup" aria-expanded="false"></button>
+                            <button type="button" class="close" data-bs-toggle="collapse"
+                                data-bs-target="#footer__popup" aria-expanded="false"></button>
                             <div class="footer__popup-form">
                                 <div class="footer__popup-title">
                                     Сообщить об ошибке
                                 </div>
                                 <form action="#" id="footer-popup">
-                                    <label class="label-radio"><input type="radio" name="error-type" checked value="1" /><span>Ошибка в тексте</span></label>
-                                    <label class="label-radio"><input type="radio" name="error-type" value="2" /><span>Что-то не работает</span></label>
-                                    <label class="label-radio"><input type="radio" name="error-type" value="3" /><span>Идея, пожелания</span></label>
-                                    <textarea class="textarea" placeholder="Напишите сообщение" name="message"></textarea>
-                                    <div class="footer__popup-text">Введите e-mail, чтобы получить ответ*</div> 
-                                    <input type="text" class="input" name="email" required value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                                    <label class="label-radio"><input type="radio" name="error-type" checked
+                                            value="1" /><span>Ошибка в тексте</span></label>
+                                    <label class="label-radio"><input type="radio" name="error-type"
+                                            value="2" /><span>Что-то не работает</span></label>
+                                    <label class="label-radio"><input type="radio" name="error-type"
+                                            value="3" /><span>Идея, пожелания</span></label>
+                                    <textarea class="textarea" placeholder="Напишите сообщение"
+                                        name="message"></textarea>
+                                    <div class="footer__popup-text">Введите e-mail, чтобы получить ответ*</div>
+                                    <input type="text" class="input" name="email" required value=""
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
                                     <div class="footer__popup-text1">*- обязательные поля для заполнения</div>
                                     <button type="submit" class="footer__popup-btn">Отправить</button>
                                     <div class="footer__popup-text2">Нажимая кнопку, я соглашаюсь <br />
@@ -1134,9 +1225,9 @@
                             <div class="footer__popup-success">
                                 Сообщение успешно отправлено
                             </div>
-                            
+
                         </div>
-                        <div class="footer__copyright">Copyright © 2022  Все права защищены</div>
+                        <div class="footer__copyright">Copyright © 2022 Все права защищены</div>
                     </div>
                     <div class="col">
                         <div class="footer__menu">
@@ -1150,7 +1241,7 @@
                                         <li><a href="#">Новости</a></li>
                                         <li><a href="#">Акции</a></li>
                                         <li><a href="#">Блог</a></li>
-                                    </ul> 
+                                    </ul>
                                 </div>
                                 <div class="col">
                                     <ul class="footer__menu-list">
@@ -1165,7 +1256,8 @@
                                 </div>
                             </div>
                             <div class="footer__tab">
-                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab1" aria-expanded="false">Направления</button>
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab1"
+                                    aria-expanded="false">Направления</button>
                                 <div class="footer__tab-content collapse" id="footer-tab1">
                                     <div class="row">
                                         <div class="col-6">
@@ -1175,7 +1267,7 @@
                                                 <li><a href="#">Гематолог</a></li>
                                                 <li><a href="#">Гепатолог</a></li>
                                                 <li><a href="#" class="footer__menu-list-all">Посмотреть всех</a></li>
-                                            </ul> 
+                                            </ul>
                                         </div>
                                         <div class="col-6">
                                             <ul class="footer__menu-list">
@@ -1189,7 +1281,8 @@
                                 </div>
                             </div>
                             <div class="footer__tab">
-                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab2" aria-expanded="false">Что мы лечим</button>
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab2"
+                                    aria-expanded="false">Что мы лечим</button>
                                 <div class="footer__tab-content collapse" id="footer-tab2">
                                     <div class="row">
                                         <div class="col-6">
@@ -1199,7 +1292,7 @@
                                                 <li><a href="#">Заболевание 3</a></li>
                                                 <li><a href="#">Заболевание 4</a></li>
                                                 <li><a href="#" class="footer__menu-list-all">Посмотреть все</a></li>
-                                            </ul> 
+                                            </ul>
                                         </div>
                                         <div class="col-6">
                                             <ul class="footer__menu-list">
@@ -1213,7 +1306,8 @@
                                 </div>
                             </div>
                             <div class="footer__tab">
-                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab3" aria-expanded="false">Услуги</button>
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab3"
+                                    aria-expanded="false">Услуги</button>
                                 <div class="footer__tab-content collapse" id="footer-tab3">
                                     <div class="row">
                                         <div class="col-6">
@@ -1223,7 +1317,7 @@
                                                 <li><a href="#">Диагностика</a></li>
                                                 <li><a href="#">Лечение</a></li>
                                                 <li><a href="#" class="footer__menu-list-all">Посмотреть все</a></li>
-                                            </ul> 
+                                            </ul>
                                         </div>
                                         <div class="col-6">
                                             <ul class="footer__menu-list">
@@ -1236,7 +1330,8 @@
                                 </div>
                             </div>
                             <div class="footer__tab">
-                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab4" aria-expanded="false">Наши специалисты</button>
+                                <button class="footer__tab-btn" data-bs-toggle="collapse" data-bs-target="#footer-tab4"
+                                    aria-expanded="false">Наши специалисты</button>
                                 <div class="footer__tab-content collapse" id="footer-tab4">
                                     <div class="row">
                                         <div class="col-6">
@@ -1246,7 +1341,7 @@
                                                 <li><a href="#">Денис Александрович Радионов</a></li>
                                                 <li><a href="#">Александр Сергеевич Бойко</a></li>
                                                 <li><a href="#" class="footer__menu-list-all">Посмотреть все</a></li>
-                                            </ul> 
+                                            </ul>
                                         </div>
                                         <div class="col-6">
                                             <ul class="footer__menu-list">
@@ -1267,13 +1362,13 @@
                                 Адреса в Киеве
                             </div>
                             <div class="footer__address-item">
-                                <strong>г. Киев, б-р Кольцова, 14-з</strong> <br/>
+                                <strong>г. Киев, б-р Кольцова, 14-з</strong> <br />
                                 Детское отделение. Хирургия
                             </div>
                             <div class="footer__address-item">
-                                <strong>г. Киев, б-р Кольцова, 14-л</strong><br/>
+                                <strong>г. Киев, б-р Кольцова, 14-л</strong><br />
                                 Взрослое отделение
-                            </div>      
+                            </div>
                         </div>
                         <div class="footer__phone">
                             <span class="footer__phone-number">0800 30 30 18</span> <br />
@@ -1292,7 +1387,7 @@
                             <a href="#"><img src="images/icons/icon-footer-instagram.svg" alt="" /></a>
                         </div>
                     </div>
-                </div>              
+                </div>
             </div>
         </footer>
         <div class="scroll-block" id="scroll-block">
@@ -1301,34 +1396,37 @@
                 <a class="scroll-block__phone" href="#"></a>
                 <a class="scroll-block__wa" href="#"></a>
             </div>
-            <a class="scroll-block__mes" href="#scroll-block-mes" data-bs-toggle="collapse" data-bs-target="#scroll-block-mes"></a>
+            <a class="scroll-block__mes" href="#scroll-block-mes" data-bs-toggle="collapse"
+                data-bs-target="#scroll-block-mes"></a>
             <a class="scroll-block__to-top" href="#top"></a>
         </div>
     </div>
 
-    <div class="popup-call modal fade align-items-center" id="popup-call" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="popup-call modal fade align-items-center" id="popup-call" tabindex="-1" role="dialog"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
-              <div class="popup-call__container">
+            <div class="modal-content">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="popup-call__container">
                     <img src="images/logo.png" alt="" />
                     <div class="popup-call__title">Хотите мы <br /> вам перезвоним?</div>
-                    <form action="#" class="popup-call__form" id="popup-call-form">  
+                    <form action="#" class="popup-call__form" id="popup-call-form">
                         <input class="input" placeholder="Ваше имя" name="" />
-                        <input type="text" class="input" data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value="" required />
+                        <input type="text" class="input" data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value=""
+                            required />
                         <button type="submit" class="popup-call__btn">Жду звонка</button>
                         <p class="popup-call__text">Нажимая кнопку, я соглашаюсь <br />
-                        с <a href="#">условиями политики конфиденциальности</a></p>
+                            с <a href="#">условиями политики конфиденциальности</a></p>
                         <p class="popup-call__text1">*- обязательные поля для заполнения</p>
                         <p class="popup-call__text2">Мы поможем быстро найти то, <br />что Вам нужно!</p>
                     </form>
 
-              </div>
-              <div class="popup-call__success">
-                  Ожидайте звонка
-              </div>
-              
-          </div>
+                </div>
+                <div class="popup-call__success">
+                    Ожидайте звонка
+                </div>
+
+            </div>
         </div>
     </div>
 

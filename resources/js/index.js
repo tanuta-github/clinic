@@ -71,10 +71,49 @@ document.getElementById("popup-call-form").addEventListener("submit", event => {
 /*****************/
 document.addEventListener("scroll", event => {
   document.getElementById('scroll-block').className = (document.scrollingElement.scrollTop > window.innerHeight) ? "scroll-block show" : "scroll-block"
-  document.querySelector('.header').className = (document.scrollingElement.scrollTop > 0) ? "header header-fixed" : "header"
+  //document.querySelector('.header').className = (document.scrollingElement.scrollTop > 0) ? "header header-fixed" : "header"
+  const header = document.querySelector('.header')
+  if (document.scrollingElement.scrollTop > 0) header.classList.add('header-fixed'); else  header.classList.remove('header-fixed')
+  
+})
+/***************/
+
+document.querySelector('.header__lang-link, .header__lang-link-active').addEventListener('click', e => {
+  document.querySelector('.header__lang-link').classList.toggle('opened')
 })
 
- 
+/************ */
+document.querySelector('.header__xs-search').addEventListener('click', e => {
+  document.querySelector('.header').classList.toggle('header-search')
+})
+document.querySelector('.header__xs-search-form').addEventListener('submit', e => {
+  e.preventDefault()
+  const v = document.querySelector('.header__xs-search-form-input').value
+  if (!v) document.querySelector('.header').classList.toggle('header-search') 
+  else {
+    document.querySelector('.search-result').style.display = 'block'
+  }
 
+})
 
+document.querySelector('.header__xs-search-form-input').addEventListener('keyup', e => {
+  const v =  document.querySelector('.header__xs-search-form-input').value
+  document.querySelector('.header__xs-search-form-clear').style.display = (v) ? 'block' : 'none'
+  document.querySelector('.search-result').style.display = (v) ? 'block' : 'none'
+})
 
+document.querySelector('.header__xs-search-form-clear').addEventListener('click', e => {
+    document.querySelector('.header__xs-search-form-input').value = ''
+    document.querySelector('.header__xs-search-form-clear').style.display = 'none'
+    document.querySelector('.search-result').style.display = 'none'
+})
+/*******************/
+document.querySelector('.header__xs-menu-icon').addEventListener('click', e => {
+  const el = document.querySelector('.header')
+  el.classList.toggle('header-open')
+  el.classList.remove('header-search')
+  
+})
+document.querySelector('.header .close').addEventListener('click', e => {
+  document.querySelector('.header').classList.toggle('header-open')
+})

@@ -1,18 +1,39 @@
 .header-fixed ~ .banner{
-    margin-top: 120px;
+    margin-top: 110px;
 }
 .banner {
     margin-top: 156px;
     transition: all 0.1s;
     margin-bottom: 50px;
+    .media(mobile, {
+        margin-bottom: 40px
+    });
     &__img {
        height: 570px;
        background: no-repeat 50% 0;
        background-size: auto 100%;
+       .media(mobile, { height: 470px;}); 
+       @media (max-width: 800px) {
+            height: 370px;
+        }
+        @media (max-width: 660px) {
+            height: 280px;
+        }
+        @media (max-width: 500px) {
+            height: 200px;
+        }
+        @media (max-width: 375px) {
+            height: 224px;
+        }
     }
     .bg-main {
         background-image: url(../images/banner.jpg);
+        @media (max-width: 375px) {
+            background-image: url(../images/banner-mobile.jpg);
+            height: 224px;
+        }
     }
+
     .bg-hirurg {
         background-image: url(../images/banner_hirurg.jpg); 
     }
@@ -22,6 +43,10 @@
         justify-content: space-around;
         position: relative;
         z-index: 10;
+        .media(mobile, { 
+            margin: -25px -10px 0;
+            flex-wrap: wrap;
+        }); 
         &-item {
             .blur;
             display: block;
@@ -29,20 +54,39 @@
             text-align: center;
             text-decoration: none;
             color: @color-dark-gray;
-           
             font-size: 20px;
             font-weight: 500;
             line-height: 1.2;
             box-shadow: 7px 7px 7px 3px rgba(0, 0, 0, 10%);
             padding-bottom: 40px;
+            .media(mobile, { 
+                width: calc(50% - 10px);
+                font-size: 14px;
+                padding: 0 20px;
+                margin-bottom: 10px;
+                box-shadow: 0 0 10px 2px rgba(0, 0, 0, 20%);
+            }); 
             &-img {
                 display: flex;
                 align-items: flex-end;
                 justify-content: center;
                 height: 120px;
+                img {
+                    height: 56px;
+                }
+                .media(mobile, { 
+                    height: 64px;
+                    margin-bottom: 10px;
+                }); 
             }
             &:nth-child(4) &-img {
                 height: 100px;
+                img {
+                    height: 46px;
+                }
+                .media(mobile, { 
+                    height: 54px;
+                }); 
             }
             &:hover {
                 color: inherit;
@@ -64,4 +108,5 @@
         
 
     }
+    .media(mobile, { margin-top: 52px !important; }); 
 }
