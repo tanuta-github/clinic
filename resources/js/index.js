@@ -51,20 +51,27 @@ document.addEventListener("click", function(event){
     document.getElementById("calendar").className = "calendar collapse jsCalendar"
 })
 /*******************/
-document.getElementById("form-call").addEventListener("submit", function(event){
+document.getElementById("form-call").addEventListener("submit", event => {
   event.preventDefault();
   
 })
 /***************** */
-document.getElementById("footer-popup").addEventListener("submit", function(event){
+document.getElementById("footer-popup").addEventListener("submit", event => {
   event.preventDefault();
   document.querySelector('.footer__popup-form').style.display = 'none'
   document.querySelector('.footer__popup-success').style.display = 'block'
 })
+/*****************/ 
+document.getElementById("popup-call-form").addEventListener("submit", event => {
+  event.preventDefault();
+  document.querySelector('.popup-call__container').style.display = 'none'
+  document.querySelector('.popup-call__success').style.display = 'block'
+})
+
 /*****************/
 document.addEventListener("scroll", event => {
   document.getElementById('scroll-block').className = (document.scrollingElement.scrollTop > window.innerHeight) ? "scroll-block show" : "scroll-block"
-  document.querySelector('.header').className = (document.scrollingElement.scrollTop > 2) ? "header header-fixed" : "header"
+  document.querySelector('.header').className = (document.scrollingElement.scrollTop > 0) ? "header header-fixed" : "header"
 })
 
  

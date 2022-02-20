@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/index.css" />
 </head>
 
-<body>
+<body> 
 
     <div class="wrapper" id="top">
         <header class="header">
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="col-2">
-                        <div class="header__btn-online">Запис Онлайн</div>
+                        <div class="header__btn-online" data-bs-toggle="modal" data-bs-target="#popup-call">Запис Онлайн</div>
                     </div>
                     <div class="col-auto">
                         <div class="header__personal">
@@ -1285,6 +1285,12 @@
                             Пн. - Пт. 7:00 - 21:00 <br />
                             Сб. - Вс. 8:00 - 21:00
                         </div>
+                        <div class="footer__soc">
+                            <div>Ділимося порадами про здоров'є </div>
+                            <a href="#"><img src="images/icons/icon-footer-facebook.svg" alt="" /></a>
+                            <a href="#"><img src="images/icons/icon-footer-youtube.svg" alt="" /></a>
+                            <a href="#"><img src="images/icons/icon-footer-instagram.svg" alt="" /></a>
+                        </div>
                     </div>
                 </div>              
             </div>
@@ -1299,6 +1305,33 @@
             <a class="scroll-block__to-top" href="#top"></a>
         </div>
     </div>
+
+    <div class="popup-call modal fade align-items-center" id="popup-call" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="popup-call__container">
+                    <img src="images/logo.png" alt="" />
+                    <div class="popup-call__title">Хотите мы <br /> вам перезвоним?</div>
+                    <form action="#" class="popup-call__form" id="popup-call-form">  
+                        <input class="input" placeholder="Ваше имя" name="" />
+                        <input type="text" class="input" data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value="" required />
+                        <button type="submit" class="popup-call__btn">Жду звонка</button>
+                        <p class="popup-call__text">Нажимая кнопку, я соглашаюсь <br />
+                        с <a href="#">условиями политики конфиденциальности</a></p>
+                        <p class="popup-call__text1">*- обязательные поля для заполнения</p>
+                        <p class="popup-call__text2">Мы поможем быстро найти то, <br />что Вам нужно!</p>
+                    </form>
+
+              </div>
+              <div class="popup-call__success">
+                  Ожидайте звонка
+              </div>
+              
+          </div>
+        </div>
+    </div>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="js/inputmask.min.js"></script>
     <script src="js/jsCalendar.js"></script>
