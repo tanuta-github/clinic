@@ -441,21 +441,21 @@
                 <div class="help-form__container">
                     <div class="help-form__quest">Не знаете какой врач Вам нужен?</div>
                     <h2 class="help-form__title">МЫ ПОМОЖЕМ ВАМ <br>В ВЫБОРЕ ВРАЧА</h2>
-                    <p class="help-form__desc">Оставьте <span class="w">заявку</span> и мы свяжемся с Вами в ближайшее
+                    <p class="help-form__desc">Оставьте <span class="w">заявку</span><br /> и мы свяжемся с Вами в ближайшее
                         время!</p>
                     <form class="help-form__fields"
                         onsubmit="document.getElementById('help-form-success').className +=' show'; return false">
-                        <div class="row">
+                        <div class="row order-1">
                             <div class="col-6"><input type="text" class="help-form__fields-input" name="name"
                                     placeholder="Ваше имя" value="" /></div>
                             <div class="col-6"><input type="text" class="help-form__fields-input" name="phone"
                                     placeholder="+38 (___) ___ - __ - __*"
                                     data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value="" required /></div>
                         </div>
-                        <button class="help-form__fields-btn">Оставить заявку</button>
-                        <label class="help-form__fields-small"><input type="checkbox" name="check" required checked />
-                            Нажимая кнопку, я соглашаюсь с условиями политики конфиденциальности</label>
-                        <div class="help-form__fields-small">*- обязательные поля для заполнения</div>
+                        <button class="help-form__fields-btn order-3">Оставить заявку</button>
+                        <label class="help-form__fields-small order-4 align-left"><input type="checkbox" name="check" required checked />
+                            Нажимая кнопку, я соглашаюсь с <a href="#">условиями политики конфиденциальности</a></label>
+                        <div class="help-form__fields-small order-2">*- обязательные поля для заполнения</div>
                     </form>
 
                     <div class="help-form__success collapse" id="help-form-success">

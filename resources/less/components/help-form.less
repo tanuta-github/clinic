@@ -3,18 +3,33 @@
     height: 588px;
     text-align: center;
     color: #fff;
+    .container {
+        .media(mobile, { padding: 0; });
+    }
+    .media(mobile, {
+        background: url(../images/help-form-bg1.jpg) no-repeat -40px 0;
+        background-size: auto 235px;
+        padding: 235px 0 0;
+        height: auto;
+    });
     &__quest {
         font-size: 24px;
         padding: 0 0 27px;
+        .media(mobile, { font-size: 16px; padding-bottom: 10px; });
     }
     &__title {
         font-size: 48px;
+        .media(mobile, { font-size: 24px; line-height: 1.2; });
     }
     &__desc {
         font-size: 16px;
         font-weight: 500;
         color: @color-gray2;
         margin-bottom: 32px;
+        br {
+            display: none;
+            .media(mobile, { display: block;});
+        }
         .w {
             color: @color-white;
             font-weight: 400;
@@ -22,6 +37,10 @@
         }
     }
     &__fields {
+        .media(mobile, { padding: 0 40px; display: flex; flex-direction: column;});
+        .col-6 {
+            .media(mobile, { width: 100%;});
+        }
         &-input {
             width: 100%;
             height: 40px;
@@ -29,6 +48,7 @@
             padding: 0 20px;
             box-sizing: border-box;
             outline: none;
+            .media(mobile, { margin-bottom: 12px; });
         }
         &-btn {
             border: none;
@@ -38,6 +58,7 @@
             background: @color-orange;
             padding: 10px 35px;
             margin: 35px 0 20px;
+            .media(mobile, { margin: 5px 0 10px; });
             &:hover {
                 opacity: 0.8;
             }
@@ -47,13 +68,26 @@
         }
         &-small {
             font-size: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin: 0 0 5px;
+            a, a:hover {
+                color: inherit
+            }
             input {
                 margin: 0 5px 0 10px;
+                .media(mobile, {
+                    display: block;
+                    margin-bottom: 20px;
+                    float: left;
+                });
             }
+            .media(mobile, {
+                align-items: flex-start;
+            })
+        }
+        .align-left {
+            .media(mobile, {
+                text-align: left;
+            });
         }
 
     }
@@ -94,6 +128,12 @@
         width: 665px;
         float: right;
         position: relative;
+        .media(mobile, {
+            float: none;
+            width: auto;
+            background: @color-blue8;
+            padding: 20px 10px;
+        });
     }
 }
 .help-form2 {
