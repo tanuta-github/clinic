@@ -219,7 +219,7 @@
             <div class="directions__content">
                 <div class="container">
                     <div class="tab-content tab-content-first">
-                        <div class="directions__xs-nav" data-bs-toggle="collapse" data-bs-target="#experts">Специалисты
+                        <div class="directions__xs-nav" data-bs-toggle="collapse" data-bs-target="#experts" aria-expanded="true">Специалисты
                             <svg width="13" height="8" viewBox="0 0 13 8" xmlns="http://www.w3.org/2000/svg">
                                 <line y1="-1" x2="7.89323" y2="-1"
                                     transform="matrix(0.762042 0.647527 -0.632809 0.774308 -0.00012207 2)"
@@ -1125,7 +1125,7 @@
 
                             <form class="help-form__fields" id="help-form"
                                 onsubmit="document.getElementById('help-form-success1').className +=' show'; return false">
-                                <div class="row">
+                                <div class="row order-2">
                                     <div class="col-6"><input type="text" class="help-form__fields-input" name="name"
                                             placeholder="Ваше имя" value="" /></div>
                                     <div class="col-6"><input type="text" class="help-form__fields-input" name="phone"
@@ -1133,7 +1133,7 @@
                                             data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value="" required />
                                     </div>
                                 </div>
-                                <div class="row">
+                                <div class="row order-3">
                                     <div class="col-6">
                                         <select name="doctor" multiple>
                                             <option value="2">Педиатр</option>
@@ -1150,14 +1150,14 @@
                                         <div id="calendar" class="calendar collapse" data-language="ru"> </div>
                                     </div>
                                 </div>
-                                <p class="help-form__desc">Оставьте <span class="w">заявку</span> и мы свяжемся с Вами в
+                                <p class="help-form__desc order-1">Оставьте <span class="w">заявку</span> и мы свяжемся с Вами в
                                     ближайшее время!</p>
-                                <button class="help-form__fields-btn">Оставить заявку</button>
-                                <label class="help-form__fields-small"><input type="checkbox" name="check" required
+                                <button class="help-form__fields-btn order-5">Оставить заявку</button>
+                                <label class="help-form__fields-small order-6 align-left"><input type="checkbox" name="check" required
                                         checked />
-                                    Нажимая кнопку, я соглашаюсь с условиями политики конфиденциальности</label>
-                                <div class="help-form__fields-small">*- обязательные поля для заполнения</div>
-                            </form>
+                                    Нажимая кнопку, я соглашаюсь с <a href="#">условиями политики конфиденциальности</a></label>
+                                <div class="help-form__fields-small order-4">*- обязательные поля для заполнения</div>
+                            </form> 
 
                             <div class="help-form__success collapse" id="help-form-success1">
                                 <button type="button" class="close" data-bs-toggle="collapse"

@@ -157,7 +157,7 @@
             float: none;
             width: auto;
             background: @color-blue8;
-            padding: 20px 10px 35px;
+            padding: 20px 10px;
         });
     }
 }
@@ -165,6 +165,19 @@
     background: url(../images/visit-form-bg.jpg) no-repeat 50% 0;
     min-height: 590px;
     position: relative;
+    .media(mobile, { 
+        background: #f6f8f7 url(../images/visit-form-bg.jpg) no-repeat -130px 100px !important;
+        background-size: auto 590px !important;
+        padding-top: 590px !important;
+    });
+    @media(max-width: 800px) {
+        background-size: auto 450px;
+        padding-top: 450px !important;
+    }
+    @media(max-width: 400px) {
+        background-size: auto 380px !important;
+        padding-top: 380px !important;
+    }
     &__bg {
         position: absolute;
         top: 0;
@@ -172,27 +185,79 @@
         width: 68%;
         height: 100%;
         background-color: @color-blue9;
+        .media(mobile, {
+            display: none;
+        })
     }
     .help-form__container {
         padding-top: 60px;
         padding-bottom: 20px;
+        .media(mobile, { 
+            position: static; 
+            padding: 45px 0;
+        })
     }
     .help-form__quest {
         font-size: 20px;
         font-weight: 400;
+        .media(mobile, {
+            position: absolute;
+            top: 31px;
+            left: 0;
+            width: 100%;
+            color: @color-blue7;
+            text-align: center;
+            font-size: 14px;
+            box-sizing: border-box;
+            padding: 0 30px;
+        })
+    }
+    .help-form__fields {
+        display: block;
+        .media(mobile, { display: flex;});
+        &-input {
+            margin-bottom: 25px;
+        }
     }
     .help-form__title {
         font-size: 30px;
         margin-bottom: 40px;
+        .media(mobile, { 
+            font-size: 24px;
+            padding: 0 50px;
+            margin-bottom: 15px;
+        });
+    }
+    .help-form__fields-btn {
+        .media(mobile, {
+            margin: 20px 15px;
+            padding: 13px 0;
+         });
+    }
+    .choices {
+        .media(mobile, { margin-bottom: 25px; });
     }
     .help-form__fields .row {
         margin-bottom: 30px;
+        .media(mobile, { 
+            margin: 0;
+        });
     }
     .help-form__desc {
         margin-bottom: 12px;
+        .media(mobile, {
+            font-size: 14px;
+            padding: 5px 20px 10px;
+        });
     }
     .help-form__success {
         width: 760px;
+    }
+    .order-5 {
+        order: 5;
+    }
+    .order-6 {
+        order: 6;
     }
 }
 
