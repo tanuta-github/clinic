@@ -2,8 +2,10 @@
     background: @color-light-gray;
     padding: 90px 0 225px;
     color: @color-gray5;
+    .media(mobile, { padding-top: 35px; });
     .nav {
         display: block;
+        .media(mobile, { display: none;});
     }
     &__btn {
         display: flex;
@@ -57,8 +59,63 @@
             background: #fff;
         }
     }
+    .tab-content>.active {
+        .media(mobile, {
+            display: none;
+        });
+    }
+    .tab-content>.show, .tab-content>.collapsing {
+        .media(mobile, {
+            display: block !important;
+        });
+    }
+    .col-auto, .col {
+        padding: 0;
+    }
+    &__xs-btn {
+        display: none;
+        .media(mobile, {
+            display: flex;
+            width: 100%;
+            border: 1px solid @color-gray8;
+            background: @color-white;
+            padding: 12px 25px;
+            margin-top: -1px;
+            position: relative;
+            align-items: center;
+            color: @color-gray5;
+            cursor: pointer;
+        });
+        &-num {
+            flex: 0 0 auto;
+            font-size: 30px;
+            font-weight: 700;
+            color: @color-blue7;
+        }
+        &-text {
+            flex: 1 0 0%;
+            text-align: left;
+            padding: 0 0 0 15px;
+            font-size: 18px;
+        }
+        svg {
+            stroke: @color-blue6;
+            flex: 0 0 auto;
+        }
+        &[aria-expanded="true"] {
+            background: @color-blue8;
+            color: @color-white;
+            svg {
+                stroke: @color-white;
+                transform: rotate(180deg);
+            }
+            .about__xs-btn-num {
+                color: @color-white;
+            }
+        }
+    }
     &__content {
-        margin: -490px 20px 0 475px;
+        margin: 0 20px 0 0;
         background: @color-white url(../images/about.jpg) no-repeat 100% 100%;
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
         min-height: 490px;
@@ -66,6 +123,7 @@
         padding: 33px 420px 45px 50px;
         box-sizing: border-box;
         font-weight: 500;
+        .media(mobile, { margin: 0; padding: 28px 20px; background-position: calc(100% + 160px) 120px;});
         &-title {
             font-size: 35px;
             color: @color-blue7;
@@ -73,8 +131,13 @@
             padding-bottom: 7px;
             border-bottom: 1px solid #C0EBD9;
             margin-bottom: 35px;
+            .media(mobile, { margin-bottom: 20px;});
 
+        }
+        p {
+            .media(mobile, { max-width: 60%; font-weight: 400;});
         }
         
     }
+    
 }
