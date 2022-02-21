@@ -1,8 +1,17 @@
 .digits {
     padding: 125px 0 85px;
+    .media(mobile, {
+        padding: 60px 0 65px;
+    });
+    .col-3, .col-6 {
+        .media(mobile, { width: 50%;})
+    }
+    .col-6 {
+        .media(mobile, { width: 100%;})
+    }
     &__item {
         height: 140px;
-        border-radius: 5px;
+        border-radius: 10px;
         background: #f9f9f7;
         color: #394149;
         margin: 0 15px 40px 0;
@@ -15,15 +24,33 @@
         padding: 0 20px;
         text-align: center;
         line-height: 1.1;
+        box-sizing: border-box;
+        .media(mobile, {
+            padding: 50px 20px 10px;
+            margin: 0 0 15px;
+            background-position: 50% 5px;
+            height: auto;
+            min-height: 110px;
+            display: block;
+            font-size: 14px;
+            font-weight: 300;
+        });
         &-num {
             font-size: 48px;
             font-weight: 500;
             margin-right: 5px;
             color: @color-blue5;
+            .media(mobile, {
+                font-size: 30px;
+            });
             span {
                 font-size: 20px;
                 margin-right: 7px;
                 font-weight: 400;
+                .media(mobile, {
+                    font-size: 14px;
+                    font-weight: 300;
+                });
             }
         }
     }
@@ -40,6 +67,16 @@
     &__bg3 {
         background-image: url(../images/icons/icon-digits3.png);
         padding: 0 50px;
+        .media(mobile, {
+            background-position: 25% 15px;
+            padding: 20px 10px 30px;
+            height: auto;
+            .digits__item-num {
+                padding-left: 35px;
+                padding-bottom: 10px;
+
+            }
+        })
     }
     &__bg4 {
         background-image: url(../images/icons/icon-digits4.png);

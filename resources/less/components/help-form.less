@@ -7,11 +7,19 @@
         .media(mobile, { padding: 0; });
     }
     .media(mobile, {
-        background: url(../images/help-form-bg1.jpg) no-repeat -40px 0;
-        background-size: auto 235px;
-        padding: 235px 0 0;
+        background: url(../images/help-form-bg1.jpg) no-repeat 50% 0;
+        background-size: 100%;
+        padding: 300px 0 0;
         height: auto;
     });
+    @media(max-width: 800px) {
+        background-size: auto 300px;
+    }
+    @media(max-width: 400px) {
+        background-position: -40px 0;
+        background-size: auto 235px;
+        padding: 235px 0 0;
+    }
     &__quest {
         font-size: 24px;
         padding: 0 0 27px;
@@ -28,7 +36,7 @@
         margin-bottom: 32px;
         br {
             display: none;
-            .media(mobile, { display: block;});
+            @media(max-width: 400px) { display: block;}
         }
         .w {
             color: @color-white;
@@ -37,7 +45,12 @@
         }
     }
     &__fields {
-        .media(mobile, { padding: 0 40px; display: flex; flex-direction: column;});
+        .media(mobile, { 
+            padding: 0 40px; 
+            display: flex; 
+            flex-direction: column; 
+            max-width: 700px; 
+            margin: 0 auto});
         .col-6 {
             .media(mobile, { width: 100%;});
         }
@@ -98,6 +111,11 @@
         right: 0;
         z-index: 100;
         width: 831px;
+        .media(mobile, {
+            width: calc(100% - 60px);
+            right: 30px;
+            top: 45px;
+         });
         .close {
             border: none;
             position: absolute;
@@ -107,6 +125,7 @@
             border-radius: 5px;
             width: 35px;
             height: 35px;
+            .media(mobile, { top: 20px; right: 20px;});
         }
         &-message {
             display: flex;
@@ -117,10 +136,16 @@
             font-size: 24px;
             font-weight: 700;
             color: @color-dark-gray;
+            img {
+                display: none;
+                .media(mobile, { display: block; });
+            } 
+            .media(mobile, { height: 330px; font-size: 18px;});
         }
         &-thanks {
             font-size: 36px;
             color: @color-orange;
+            .media(mobile, { font-size: 24px; });
         }
     }
     &__container {
@@ -132,7 +157,7 @@
             float: none;
             width: auto;
             background: @color-blue8;
-            padding: 20px 10px;
+            padding: 20px 10px 35px;
         });
     }
 }
