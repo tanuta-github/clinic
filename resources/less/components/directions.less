@@ -24,21 +24,43 @@
             display: none;
         });
     }
+    .tab-content-first>.active {
+        .media(mobile, {
+            display: none;
+        });
+    }
+    .tab-content-first>.show, .tab-content-first>.collapsing {
+        .media(mobile, {
+            display: block !important;
+        });
+    }
     &__xs-nav {
         display: none;
         .media(mobile, {
             display: block;
+            width: 225px;
+            margin: 0 auto;
+            padding: 13px 20px 13px 30px;
+            color: @color-gray5;
+            text-align: center;
+            line-height: 1;
+            border-radius: 25px;
         });
+        svg {
+            stroke: #C4C4C4;
+            float: right;
+            margin-top: 3px;
+        }
+        &[aria-expanded="true"] {
+            background: @color-blue7;
+            color: @color-white;
+            svg {
+                transform: rotate(180deg);
+                stroke: #fff;
+            }
+        }
     }
-    .tab-content>.show, .tab-content>.collapsing {
-        .media(mobile, {
-            display: block !important;
-        })
-    }
-   
-  /*  .tab-content>.tab-pane.show {
-        display: block;
-    }*/
+
     &__nav {
         background: #f3f3f3;
         border-radius: 25px;
@@ -69,9 +91,13 @@
         .media(mobile, {
             background: none;
             box-shadow: none;
+            padding-top: 12px;
         })
     }
     &__nav-inner {
+        .media(mobile, {
+            padding: 30px 10px;
+        });
         button {
             background: none;
             border: none;
@@ -98,12 +124,22 @@
     &__list {
         display: flex;
         padding: 25px 0 0;
+        .media(mobile, {
+            padding: 0 10px 25px;
+            display: block;
+        });
         & > div {
             width: 25%;
+            .media(mobile, {
+               width: 100%;
+            });
         }
         &-item {
             display: flex;
             padding: 0 0 8px;
+            .media(mobile, {
+                padding: 0;
+             });
         }
         &-digit {
             color: @color-blue2;
@@ -126,5 +162,19 @@
                 opacity: 0.8;
             }
         }
+    }
+    &__c {
+        .media(mobile, {
+            padding: 20px;
+            text-align: center;
+        })
+    }
+    &__book-xs {
+        display: none;
+        .media(mobile, {
+            display: block;
+            margin-top: 7px;
+            text-align: center;
+        })
     }
 }
