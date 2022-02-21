@@ -71,6 +71,10 @@ body.modal-open {
   line-height: 1;
   font-weight: 700;
   margin-bottom: 30px;
+  .media(mobile, {
+      font-size: 30px;
+      margin-bottom: 20px;
+  });
 }
 .title1 {
   .title;
@@ -80,6 +84,10 @@ body.modal-open {
   text-align: center;
   font-size: 18px;
   margin-bottom: 55px;
+  .media(mobile, {
+    font-size: 16px;
+    margin-bottom: 20px;
+});
 }
 .center {
   display: flex;
@@ -105,6 +113,13 @@ body.modal-open {
       color: @color-blue2;
       opacity: 0.8;
   }
+  .media(mobile, {
+    text-transform: none;
+    border: none;
+    background: url(../images/icons/icon-btn-arrow.svg) no-repeat 100% 50%;
+    padding: 0 35px 0 50px;
+    letter-spacing: 0;
+  });
 }
 .hover {
   &:hover {
@@ -300,7 +315,7 @@ body.modal-open {
   });
 }
 
-.services, .specialists, .stocks, .news, .about, .help-form2, .client-reviews, .reviews, .licenses, .info, .form-call, .footer {
+.specialists, .stocks, .news, .about, .help-form2, .client-reviews, .reviews, .licenses, .info, .form-call, .footer {
   .media(mobile, {
     display: none;
   })
