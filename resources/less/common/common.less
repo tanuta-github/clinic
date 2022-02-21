@@ -117,7 +117,7 @@ body.modal-open {
     text-transform: none;
     border: none;
     background: url(../images/icons/icon-btn-arrow.svg) no-repeat 100% 50%;
-    padding: 0 35px 0 50px;
+    padding: 0 35px 0 0;
     letter-spacing: 0;
   });
 }
@@ -222,10 +222,20 @@ body.modal-open {
 .swiper-4 {
   margin: 0 -75px 95px;
   padding: 0 75px;
+  .media(mobile, {
+    padding: 0;
+    margin: 0;
+  });
   .swiper-slide {
     width: 25%;
     padding: 0 10px;
     box-sizing: border-box;
+    .media(mobile, {
+      width: 335px;
+      padding: 0 15px;
+    });
+
+    
   }
   .swiper-button-prev, .swiper-button-next {
       background: #fff;
@@ -234,6 +244,7 @@ body.modal-open {
       width: 75px;
       height: calc(100% + 45px);
       cursor: auto;
+      .media(mobile, { display: none;})
   }
   .swiper-button-prev:after, .swiper-button-next:after {
       content: "";
@@ -315,8 +326,9 @@ body.modal-open {
   });
 }
 
-.specialists, .stocks, .news, .about, .help-form2, .client-reviews, .reviews, .licenses, .info, .form-call, .footer {
+.news, .about, .help-form2, .client-reviews, .reviews, .licenses, .info, .form-call, .footer {
   .media(mobile, {
     display: none;
   })
 }
+ 
