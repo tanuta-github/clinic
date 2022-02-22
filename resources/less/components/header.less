@@ -213,6 +213,8 @@
       align-items: center;
       padding: 10px;
       font-size: 15px;
+      .media(mobile, { 
+        flex-direction: column;});
       &-title {
         padding: 5px 30px 5px 15px;
         border-radius: 5px 0 0 5px;
@@ -222,6 +224,7 @@
         img {
           margin-right: 5px;
         }
+        .media(mobile, { margin-right: 0;});
       }
       p {
         margin: 0;
@@ -247,7 +250,9 @@
       border-radius: 0 0 10px 10px;
       z-index: 100;
       box-sizing: border-box;
-      padding: 30px 0 35px 125px;
+      .header__popup-c {
+        padding: 30px 0 35px 125px;
+      }
       box-shadow: 0px 3px 7px rgba(97, 97, 97, 0.1);
       text-align: left;
       color: @color-gray7;
@@ -332,6 +337,9 @@
   .header__menu {
     margin-top: 5px;
     padding: 7px 0;
+  }
+  .header__warning {
+    display: none;
   }
 }
 .header-search {

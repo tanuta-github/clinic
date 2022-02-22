@@ -117,3 +117,11 @@ document.querySelector('.header__xs-menu-icon').addEventListener('click', e => {
 document.querySelector('.header .close').addEventListener('click', e => {
   document.querySelector('.header').classList.toggle('header-open')
 })
+/****************/
+const bannerPos = () => {
+  document.querySelector('.banner').style.marginTop = document.querySelector('.header').offsetHeight + "px"
+}
+window.addEventListener('resize', e => {
+  setTimeout(bannerPos,50);
+});
+bannerPos();
