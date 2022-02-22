@@ -96,7 +96,7 @@
             background: none;
             box-shadow: none;
             padding: 12px 0 45px;
-            max-width:375px;
+            max-width:800px;
             margin: 0 auto;
         })
     }
@@ -130,15 +130,18 @@
     &__list {
         display: flex;
         padding: 25px 0 0;
+        flex-wrap: wrap;
         .media(mobile, {
             padding: 0 10px 25px;
-            display: block;
         });
         & > div {
             width: 25%;
             .media(mobile, {
-               width: 100%;
+               width: 50%;
             });
+            @media (max-width: 500px) {
+                width: 100%;
+            };
         }
         &-item {
             display: flex;
