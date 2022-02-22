@@ -4,16 +4,39 @@
     color: @color-white;
     font-size: 14px;
     line-height: 1;
+    position: relative;
+    .position-relative {
+        position: static !important;
+    }
+    .media(mobile, {
+        padding-top: 35px;
+        padding-bottom: 180px;
+        .col-4 {
+            width: 100%;
+        }
+
+    });
+    &__logo {
+        width: 128px;
+        display: block;
+        .media(mobile, { margin: 0 auto;})
+    }
     &__desc {
         padding: 25px 30px 0 0;
         font-weight: 300;
         line-height: 1.3;
         text-align: justify;
+        .media(mobile, {
+            display: none;
+        })
     }
     &__search {
         position: relative;
         margin: 32px 35px 0 0;
         .placeholder(@color-white);
+        .media(mobile, {
+            display: none;
+        });
         &-input {
             border: 1px solid #fff;
             background: rgba(256, 256, 256, 0.2);
@@ -45,6 +68,11 @@
         padding: 12px 35px;
         border-radius: 25px;
         color: @color-white;
+        .media(mobile, {
+            position: absolute;
+            bottom: 40px;
+            left: calc(50% - 105px);
+        })
     }
     &__popup {
         position: absolute;
@@ -53,9 +81,13 @@
         border-radius: 10px;
         background: #fff;
         top: 55px;
-        /*bottom: 25px;*/
         left: -10px;
         color: @color-gray1;
+        .media(mobile, {
+            bottom: 50px;
+            top: auto;
+            left: 7px;
+        });
         &-form {
             padding: 25px 35px;
         }
@@ -124,10 +156,12 @@
         &-item {
             margin-bottom: 15px;
         }
+        .media(mobile, { padding-right: 0; padding-bottom: 15px; text-align: center;});
     }
     &__phone {
         font-size: 12px;
         padding-bottom: 40px;
+        .media(mobile, { text-align: center; padding-bottom: 30px});
         &-number {
             font-size: 24px;
             font-weight: 700;
@@ -139,13 +173,16 @@
             font-size: 16px;
             font-weight: 500;
         }
+        .media(mobile, { text-align: center;});
     }
     &__menu {
         padding: 30px 10px 23px;
+        .media(mobile, { padding-top: 45px; });
         &-list {
             list-style: none;
             padding-left: 40px;
             margin-bottom: 40px;
+            .media(mobile, { padding-left: 0; padding-top: 45px;});
             li {
                 padding-bottom: 10px;
             }
@@ -154,10 +191,33 @@
                 text-decoration: none;
             }
         }
+        .media(mobile, { 
+            display: flex;
+            flex-direction: column;    
+            .order-xs-1 {
+                order: 1;
+            }
+            .order-xs-2 {
+                order: 2;
+            }
+            .order-xs-3 {
+                order: 3;
+            }
+            .order-xs-4 {
+                order: 4;
+            }
+            .order-xs-5 {
+                order: 5;
+            }
+        });
+        
     }
     &__tab {
         border-top: 1px solid @color-white;
         margin: 0 30px;
+        .media(mobile, {
+            margin: 0;
+        });
         button {
             width: 100%;
             height: 40px;
@@ -192,14 +252,42 @@
                 display: inline-block;
                 text-decoration: underline;
             }
+            .media(mobile, { padding-top: 0;});
         }
     }
     &__soc {
         padding: 40px 0 0;
         font-weight: 300;
+        .media(mobile, { 
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            bottom: 130px;
+        
+        });
         a {
             margin: 10px 17px 0 0;
             display: inline-block;
         }
+    }
+    &__copyright {
+        .media(mobile, {
+            position: absolute;
+            bottom: 35px;
+            left:0;
+            width: 100%;
+            text-align: center;
+        })
+    }
+    .order-xs-1 {
+        .media(mobile, { order: 1})
+    }
+    .order-xs-2 {
+        .media(mobile, { order: 2})
+    }
+    .col-auto {
+        .media(mobile, { width: 100%;})
     }
 }

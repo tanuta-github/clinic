@@ -252,6 +252,11 @@
     }
     .help-form__success {
         width: 760px;
+        .media(mobile, {
+            bottom: 100px;
+            top: auto;
+            width: calc(100% - 60px);
+        });
     }
     .order-5 {
         order: 5;

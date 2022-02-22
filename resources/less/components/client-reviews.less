@@ -1,6 +1,18 @@
 .client-reviews {
     padding: 160px 0 52px;
     color: @color-gray5;
+    .media(mobile, {
+        padding-top: 65px;
+    });
+    .title1 {
+        .media(mobile, { margin-bottom: 45px; });
+    }
+    .swiper-4 .swiper-slide {
+        .media(mobile, { 
+            padding-left: 0;
+            width: 320px;
+        });
+    }
     .swiper {
         padding-top: 5px;
     }
@@ -16,7 +28,7 @@
             height: 55px;
             position: relative;
             margin-top: -55px;
-            backdrop-filter: blur(5px);
+            /*backdrop-filter: blur(5px);*/
             border-radius: 0 0 10px 10px;
             color: #fff;
             white-space: nowrap;
