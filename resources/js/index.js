@@ -11,16 +11,6 @@ var swiper = new Swiper('.swiper', {
 /********************/
 Inputmask().mask(document.querySelectorAll("input"))
 /********************/
-document.querySelectorAll(".about__btn").forEach(function (elem) { 
-  elem.addEventListener("click", function(){
-    document.querySelectorAll(".about__btn").forEach(function (el) { 
-      el.setAttribute("aria-selected", false);
-    })
-    this.setAttribute("aria-selected", true);
-    
-  })
-})
-/********************/
 const choices = new Choices(document.querySelector('.help-form select'), {
   silent:false,
   removeItemButton:true,
@@ -51,8 +41,20 @@ document.addEventListener("click", function(event){
     document.getElementById("calendar").className = "calendar collapse jsCalendar"
 })
 /*******************/
+let timer;
 document.getElementById("form-call").addEventListener("submit", event => {
   event.preventDefault();
+  let sec = 30;
+  clearInterval(timer)
+  timer = setInterval(() => {
+    sec -= 1
+    if (sec >= 0) {
+      if (sec < 10) sec = '0'+ sec
+      document.querySelector(".form-call__timer .orange").innerHTML = sec
+    } else {
+      clearInterval(timer)
+    }
+  }, 1000)
   
 })
 /***************** */
@@ -71,21 +73,20 @@ document.getElementById("popup-call-form").addEventListener("submit", event => {
 /*****************/
 document.addEventListener("scroll", event => {
   document.getElementById('scroll-block').className = (document.scrollingElement.scrollTop > window.innerHeight) ? "scroll-block show" : "scroll-block"
-  //document.querySelector('.header').className = (document.scrollingElement.scrollTop > 0) ? "header header-fixed" : "header"
   const header = document.querySelector('.header')
   if (document.scrollingElement.scrollTop > 0) header.classList.add('header-fixed'); else  header.classList.remove('header-fixed')
   
 })
 /***************/
-
 document.querySelector('.header__lang-link, .header__lang-link-active').addEventListener('click', e => {
   document.querySelector('.header__lang-link').classList.toggle('opened')
 })
 
-/************ */
+/*************/
 document.querySelector('.header__xs-search').addEventListener('click', e => {
   document.querySelector('.header').classList.toggle('header-search')
 })
+
 document.querySelector('.header__xs-search-form').addEventListener('submit', e => {
   e.preventDefault()
   const v = document.querySelector('.header__xs-search-form-input').value
@@ -93,7 +94,6 @@ document.querySelector('.header__xs-search-form').addEventListener('submit', e =
   else {
     document.querySelector('.search-result').style.display = 'block'
   }
-
 })
 
 document.querySelector('.header__xs-search-form-input').addEventListener('keyup', e => {

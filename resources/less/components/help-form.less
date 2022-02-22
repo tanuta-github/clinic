@@ -105,7 +105,10 @@
 
     }
     &__success {
-        .blur;
+        background: rgba(255,255,255,.5);
+        backdrop-filter: blur(8px);
+        border: 3px solid @color-white;
+        border-radius: 10px;
         position: absolute;
         top: 70px;
         right: 0;
@@ -214,10 +217,13 @@
     }
     .help-form__fields {
         display: block;
-        .media(mobile, { display: flex;});
-        &-input {
-            margin-bottom: 25px;
-        }
+        .media(mobile, { 
+            display: flex;
+            &-input {
+                margin-bottom: 25px;
+            }
+        });
+        
     }
     .help-form__title {
         font-size: 30px;

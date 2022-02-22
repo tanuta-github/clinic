@@ -883,7 +883,7 @@
                 <div class="row">
                     <div class="col-auto">
                         <div class="nav" role="tablist">
-                            <button type="button" class="about__btn" role="tab" data-bs-toggle="pill"
+                            <button type="button" class="about__btn active" role="tab" data-bs-toggle="pill"
                                 data-bs-target="#about-tab1" aria-selected="true">
                                 <span class="about__btn-num">1</span><span
                                     class="about__btn-text">Профессионализм</span>
@@ -1331,12 +1331,12 @@
                             <div class="info__phone">
                                 <div class="info__phone-number">0800 30 30 18</div>
                                 <div class="info__phone-text">Безкоштовно зі всіх операторів</div>
-                                <button class="info__phone-btn">Замовити дзвінок</button>
+                                <button class="info__phone-btn" data-bs-toggle="modal" data-bs-target="#popup-call">Замовити дзвінок</button>
                             </div>
                         </div>
                     </div>
                     <div class="info__youtube">
-                        <div class="info__youtube-title"><span class="info__youtube-subscribe">Подпишись</span> на наш
+                        <div class="info__youtube-title"><a href="#" class="info__youtube-subscribe">Подпишись</a> на наш
                             канал в YouTube</div>
                         Следи за новостями и акциями
                     </div>
@@ -1612,7 +1612,7 @@
                     <div class="popup-call__title">Хотите мы <br /> вам перезвоним?</div>
                     <form action="#" class="popup-call__form" id="popup-call-form">
                         <input class="input" placeholder="Ваше имя" name="" />
-                        <input type="text" class="input" data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value=""
+                        <input type="text" class="input" placeholder="+38 (999) 999 - 99 - 99" data-inputmask="'mask': '+38 (999) 999 - 99 - 99'" value=""
                             required />
                         <button type="submit" class="popup-call__btn">Жду звонка</button>
                         <p class="popup-call__text">Нажимая кнопку, я соглашаюсь <br />

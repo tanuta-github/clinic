@@ -6,7 +6,8 @@
     line-height: 1;
     position: relative;
     .position-relative {
-        position: static !important;
+        .media(mobile, {
+        position: static !important;})
     }
     .media(mobile, {
         padding-top: 35px;
@@ -81,12 +82,14 @@
         border-radius: 10px;
         background: #fff;
         top: 55px;
-        left: -10px;
+        left: 50%;
+        transform: translate(-50%, 0);
         color: @color-gray1;
+        max-width: 800px;
         .media(mobile, {
             bottom: 50px;
             top: auto;
-            left: 7px;
+        
         });
         &-form {
             padding: 25px 35px;
@@ -177,7 +180,7 @@
     }
     &__menu {
         padding: 30px 10px 23px;
-        .media(mobile, { padding-top: 45px; });
+        .media(mobile, { padding-top: 45px; max-width: 800px; margin: 0 auto });
         &-list {
             list-style: none;
             padding-left: 40px;
